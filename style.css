@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (6, 1fr);
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+/**** Header ****/
+#header {
+    background-color: #F9E0ED;
+}
+
+/**** About ****/
