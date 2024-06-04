@@ -4,19 +4,93 @@
     box-sizing: border-box;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat (6, 1fr);
-}
-
 h1, h2, h3 {
     text-transform: uppercase;
+}
+
+/**** Nav Bar ****/
+
+
+.nav-link {
+    text-transform: uppercase;
+    font-family: 'Sofia Sans';
+    font-size: 24px;
+    font-weight: 1000;
 }
 
 /**** Header ****/
 #header {
     background-color: #F9E0ED;
+    height: 600px;
+    justify-content: center;
+    align-content: center;
+}
+
+.heading-text {
+    text-align: center;
+}
+
+/**** Work ****/
+#work {
+    background-color: #FFFCF4;
+    height: 800px;
+}
+
+.work-heading-light {
+    float: right;
+}
+
+.work-heading-bold {
+    float: right;
 }
 
 /**** About ****/
+#about {
+    background-color: #D9EFF0;
+}
+
+/**** Projects ****/
+#projects {
+    background-color: #FFFCF4;
+}
+
+/**** Contact ****/
+#contact {
+    background-color: #F9E0ED;
+}
+
+/**** Text Styles ****/
+h1.main-heading {
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 128px;
+}
+
+h2.main-heading {
+    font-family: Quicksand;
+    font-weight: normal;
+    font-size: 96px;
+}
+
+.heading-bold {
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 96px;
+}
+
+.heading-light {
+    font-family: Quicksand;
+    font-weight: normal;
+    font-size: 96px;
+}
+
+.subheading {
+    font-family: 'Sofia Sans';
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.body {
+    font-family: Sniglet;
+    font-weight: normal;
+}
