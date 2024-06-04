@@ -14,7 +14,7 @@ h1, h2, h3 {
 .nav-link {
     text-transform: uppercase;
     font-family: 'Sofia Sans';
-    font-size: 24px;
+    font-size: 48px;
     font-weight: 1000;
 }
 
@@ -47,16 +47,26 @@ h1, h2, h3 {
 /**** About ****/
 #about {
     background-color: #D9EFF0;
+    height: 800px;
 }
 
 /**** Projects ****/
 #projects {
     background-color: #FFFCF4;
+    text-align: center;
+    height: 1000px;
+}
+
+/**** Skills ****/
+#skills {
+    background-color: #D9EFF0;
+    height: 800px;
 }
 
 /**** Contact ****/
 #contact {
     background-color: #F9E0ED;
+    height: 800px;
 }
 
 /**** Text Styles ****/
@@ -93,4 +103,12 @@ h2.main-heading {
 .body {
     font-family: Sniglet;
     font-weight: normal;
+}
+
+.carousel-caption {
+    width: 100%;
+}
+
+.carousel-title {
+    color: black;
 }
