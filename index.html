@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet"><!--Sofia Sans Font-->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet"><!--Quicksand Font-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
+    <script src="app.js" defer></script>
+  </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -41,10 +42,10 @@
         <!--Header-->
         <section id="header" class="container-fluid">
             <div class="heading-text">
-                <h2 class="subheading">Hi, I'm</h2>
-                <h2 class="main-heading">Louise</h2>
-                <h1 class="main-heading">Claughton</h1>
-                <h2 class="subheading">Web Designer and Developer</h2>
+                <h2 class="subheading heading hidden">Hi, I'm</h2>
+                <h2 class="main-heading heading hidden">Louise</h2>
+                <h1 class="main-heading heading hidden">Claughton</h1>
+                <h2 class="subheading heading hidden">Web Designer and Developer</h2>
             </div>
         </section>
 
@@ -56,7 +57,7 @@
               <!--Carousel Slide 1-->
               <div class="row">
                 <!--Card 1-->
-                  <div class="col text-center">
+                  <div class="col text-center port-card hidden">
                       <div class="card mx-auto">
                           <img src="images/News Homepage (Desktop).png" class="card-img-top" alt="News Homepage">
                               <div class="card-body">
@@ -67,7 +68,7 @@
                       </div>
                   </div>
                 <!--Card 2-->
-                  <div class="col text-center">
+                  <div class="col text-center port-card hidden">
                       <div class="card mx-auto">
                           <img src="images/News Homepage (Desktop).png" class="card-img-top" alt="...">
                               <div class="card-body">
@@ -78,7 +79,7 @@
                       </div>
                   </div>
                   <!--Card 3-->
-                    <div class="col text-center">
+                    <div class="col text-center port-card hidden">
                         <div class="card mx-auto">
                             <img src="images/News Homepage (Desktop).png" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -93,7 +94,7 @@
         <!--About-->
         <section id="about" class="container-fluid">
             <div class="row">
-                <div class="col">
+                <div class="col about hidden">
                     <h2 class="heading-light" style="display: inline;">About<span class="heading-bold">Me</span></h2>
                     <ul>
                       <li>HTML</li>
@@ -107,7 +108,7 @@
                     </ul>
                     <p class="body">I recently graduated from Leeds Arts University after completing a Bachelor of Arts in Comic and Concept Art.</p>
                 </div>
-                <div class="col">
+                <div class="col about hidden">
                     <img src="images/Image Placeholder.png" class="about-image">
                 </div>
             </div>
@@ -117,10 +118,10 @@
         <section id="contact">
           <div class="row">
             <div class="col">
-              <h2 class="heading-light">Contact</h2>
+              <h2 class="heading-light contact hidden">Contact</h2>
             </div>
             <div class="col">
-              <img src="images/Image Placeholder.png" class="contact-image">
+              <img src="images/Image Placeholder.png" class="contact-image contact hidden">
             </div>
           </div>
         </section>
