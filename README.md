@@ -1,1 +1,1 @@
-Portfolio site built using HTML, CSS and Bootstrap
+Portfolio site built using HTML, CSS, Javascript and Bootstrap
