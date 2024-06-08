@@ -79,6 +79,9 @@ h1, h2, h3 {
 #about {
     background-color: #D9EFF0;
     height: 800px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .about-image {
@@ -94,17 +97,21 @@ ul {
 .skills-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .skill {
     background-color: black;
     color: white;
-    padding: 5px 10px;
+    padding: 10px 20px;
     margin: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 30px;
 }
 
 .skill:hover {
-    background-color: red;
+    background-color: hsl(5, 85%, 63%);
 }
 
 /**** Contact ****/
@@ -154,35 +161,39 @@ h2.main-heading {
     font-size: 24px;
 }
 
-.carousel-caption {
-    width: 100%;
-}
-
-.carousel-title {
-    color: black;
-}
-
-.button-red {
-    background-color: red;
-    border-radius: 30px;
-    padding: 10px;
-}
-
 /*** Animations ***/
 
-.hidden {
+.home-hidden {
     opacity: 0;
-    filter: blur(5px);
     transform: translateX(-100%);
     transition: all 1s;
 }
 
-.show {
+.home-show {
     opacity: 1;
-    filter: blur(0);
     transform: translateX(0);
 }
 
+.port-card:hover {
+    transform: scale(1.05);
+    transition-duration: 0.3s ease-in-out;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 30px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: hsl(5, 85%, 63%);
+}
+
+/*** Transition Delays ***/
 .port-card:nth-child(2){
     transition-delay: 200ms;
 }
@@ -211,30 +222,35 @@ h2.main-heading {
     transition-delay: 200ms;
 }
 
-.skill:nth-child(2):hover {
-    background-color: orange;
-}
+/*** WORK PAGE ***/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.skill:nth-child(3):hover {
-    background-color: yellow;
-}
-
-.skill:nth-child(4):hover {
-    background-color: green;
-}
-
-.skill:nth-child(5):hover {
-    background-color: lightskyblue;
-}
-
-.skill:nth-child(6):hover {
-    background-color: blue;
-}
-
-.skill:nth-child(7):hover {
-    background-color: purple;
-}
-
-.skill:nth-child(8):hover {
-    background-color: pink;
-}
+  }
+  
+  .content-item {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .image-container, .text-container {
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .work-hidden {
+    opacity: 0;
+  }
+  
+  .work-show {
+    opacity: 1;
+  }
+  
+  .full-width-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

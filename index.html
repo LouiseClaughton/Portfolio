@@ -19,16 +19,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#work" style="font-size: 18px;">Work</a>
+                <a class="nav-link" href="index.html" style="font-size: 18px;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="work.html" style="font-size: 18px;">Work</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about" style="font-size: 18px;">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects" style="font-size: 18px;">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills" style="font-size: 18px;">Skills</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact" style="font-size: 18px;">Contact</a>
@@ -42,50 +39,56 @@
         <!--Header-->
         <section id="header" class="container-fluid">
             <div class="heading-text">
-                <h2 class="subheading heading hidden">Hi, I'm</h2>
-                <h2 class="main-heading heading hidden">Louise</h2>
-                <h1 class="main-heading heading hidden">Claughton</h1>
-                <h2 class="subheading heading hidden">Web Designer and Developer</h2>
+                <h2 class="subheading heading home-hidden">Hi, I'm</h2>
+                <h2 class="main-heading heading home-hidden">Louise</h2>
+                <h1 class="main-heading heading home-hidden">Claughton</h1>
+                <h2 class="subheading heading home-hidden">Web Designer and Developer</h2>
             </div>
         </section>
 
         <!--Featured Work-->
-        <section id="work" class="container-fluid">
+        <section id="work" class="container-fluid home-hidden">
           <div id="work-heading" class="row">
             <h2 class="heading-light">Featured<span class="heading-bold"> Work</span></h2><!--Seperate row for section heading-->
           </div>
               <!--Carousel Slide 1-->
               <div class="row">
                 <!--Card 1-->
-                  <div class="col text-center port-card hidden">
+                  <div class="col text-center port-card home-hidden m-5">
                       <div class="card mx-auto">
                           <img src="images/News Homepage (Desktop).png" class="card-img-top" alt="News Homepage">
                               <div class="card-body">
-                                  <h5 class="card-title">Special title treatment</h5>
-                                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                  <h5 class="card-title">Short & Sweet</h5>
+                                  <p class="card-text">A website for a fake confectionery company with a playful focus.</p>
+                                  <button href="#" class="button">About</button>
+                                  <button href="#" class="button">Demo</button>
+                                  <button href="#" class="button">GitHub</button>
                               </div>
                       </div>
                   </div>
                 <!--Card 2-->
-                  <div class="col text-center port-card hidden">
+                  <div class="col text-center port-card home-hidden m-5">
                       <div class="card mx-auto">
                           <img src="images/News Homepage (Desktop).png" class="card-img-top" alt="...">
                               <div class="card-body">
                                   <h5 class="card-title">Special title treatment</h5>
                                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                  <button href="#" class="button">About</button>
+                                  <button href="#" class="button">Demo</button>
+                                  <button href="#" class="button">GitHub</button>
                               </div>
                       </div>
                   </div>
                   <!--Card 3-->
-                    <div class="col text-center port-card hidden">
+                    <div class="col text-center port-card home-hidden m-5">
                         <div class="card mx-auto">
                             <img src="images/News Homepage (Desktop).png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Special title treatment</h5>
                                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <button href="#" class="button">About</button>
+                                  <button href="#" class="button">Demo</button>
+                                  <button href="#" class="button">GitHub</button>
                                 </div>
                         </div>
                     </div>
@@ -94,21 +97,20 @@
         <!--About-->
         <section id="about" class="container-fluid">
             <div class="row">
-                <div class="col about hidden">
-                    <h2 class="heading-light" style="display: inline;">About<span class="heading-bold">Me</span></h2>
-                    <ul class="skills-list">
-                      <li class="skill hidden">HTML</li>
-                      <li class="skill hidden">CSS</li>
-                      <li class="skill hidden">Javascript</li>
-                      <li class="skill hidden">Bootstrap</li>
-                      <li class="skill hidden">GitHub</li>
-                      <li class="skill hidden">Figma</li>
-                      <li class="skill hidden">Webflow</li>
-                      <li class="skill hidden">Wordpress</li>
+                <div class="col about home-hidden">
+                    <h2 class="heading-light" style="display: inline;">About<span class="heading-bold"> Me</span></h2>
+                    <ul class="skills-list home-hidden">
+                      <li class="skill">HTML</li>
+                      <li class="skill">CSS</li>
+                      <li class="skill">Javascript</li>
+                      <li class="skill">Bootstrap</li>
+                      <li class="skill">GitHub</li>
+                      <li class="skill">Figma</li>
+                      <li class="skill">Wordpress</li>
                     </ul>
                     <p class="body">I recently graduated from Leeds Arts University after completing a Bachelor of Arts in Comic and Concept Art.</p>
                 </div>
-                <div class="col about hidden">
+                <div class="col about">
                     <img src="images/Image Placeholder.png" class="about-image">
                 </div>
             </div>
@@ -118,10 +120,9 @@
         <section id="contact">
           <div class="row">
             <div class="col">
-              <h2 class="heading-light contact hidden">Contact</h2>
+              <h2 class="heading-light contact home-hidden">Contact</h2>
             </div>
             <div class="col">
-              <img src="images/Image Placeholder.png" class="contact-image contact hidden">
             </div>
           </div>
         </section>
