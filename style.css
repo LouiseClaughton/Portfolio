@@ -91,6 +91,22 @@ ul {
     list-style: none;
 }
 
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+.skill:hover {
+    background-color: red;
+}
+
 /**** Contact ****/
 #contact {
     background-color: #F9E0ED;
@@ -193,4 +209,32 @@ h2.main-heading {
 
 .contact:nth-child(2) {
     transition-delay: 200ms;
+}
+
+.skill:nth-child(2):hover {
+    background-color: orange;
+}
+
+.skill:nth-child(3):hover {
+    background-color: yellow;
+}
+
+.skill:nth-child(4):hover {
+    background-color: green;
+}
+
+.skill:nth-child(5):hover {
+    background-color: lightskyblue;
+}
+
+.skill:nth-child(6):hover {
+    background-color: blue;
+}
+
+.skill:nth-child(7):hover {
+    background-color: purple;
+}
+
+.skill:nth-child(8):hover {
+    background-color: pink;
 }
