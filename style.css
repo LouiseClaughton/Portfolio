@@ -8,47 +8,14 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
-/*** Slideshow ***/
-
-.slideshow-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-}
-
-.carousel {
-    width: 100%;
-    height: 677px;
-    grid-column: span 2;
-    grid-row: 2;
-}
-
-.carousel-image {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    padding: 20px;
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.carousel-title {
-    display: inline-block;
-}
-
-.carousel-text {
-    grid-column: 2;
-    grid-row: 2;
-    justify-self: center;
-    align-self: center;
-}
-
 /**** Nav Bar ****/
 .nav-link {
     text-transform: uppercase;
     font-family: 'Sofia Sans';
     font-weight: 1000;
 }
+
+/*** Homepage ***/
 
 /**** Header ****/
 #header {
@@ -73,6 +40,10 @@ h1, h2, h3 {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.card-img-top {
+    height: 450px;
 }
 
 /**** About ****/
@@ -126,6 +97,30 @@ ul {
     padding: 50px;
 }
 
+/*** Work Page ***/
+
+#work {
+    overflow-x: hidden;
+}
+
+#project-1 {
+    background-color: #F9E0ED;
+}
+
+#project-2 {
+    background-color: #FFFCF4;
+}
+
+#project-3 {
+    background-color: #D9EFF0;
+}
+
+.image-container,
+.text-container {
+    text-align: center;
+    align-self: center;
+}
+
 /**** Text Styles ****/
 h1.main-heading {
     font-family: Quicksand;
@@ -161,23 +156,7 @@ h2.main-heading {
     font-size: 24px;
 }
 
-/*** Animations ***/
-
-.home-hidden {
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: all 1s;
-}
-
-.home-show {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.port-card:hover {
-    transform: scale(1.05);
-    transition-duration: 0.3s ease-in-out;
-}
+/* Button settings for portfolio cards on the homepage */
 
 .button {
     background-color: black;
@@ -189,68 +168,71 @@ h2.main-heading {
     transition: 0.3s;
 }
 
+/*** Animations ***/
+
+.hidden { /* Default style makes everything hidden */
+    opacity: 0;
+    transition: all 1s;
+}
+
+.right-slide { /* Animation to slide in from the right */
+    transform: translateX(100%);
+}
+
+.left-slide { /* Animation to slide in from the left */
+    transform: translateX(-100%);
+}
+
+#project-1,
+#project-2,
+#project-3 {
+    height: 100vh;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.port-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
 .button:hover {
-    background-color: hsl(5, 85%, 63%);
+    background-color: hsl(5, 85%, 63%); /*Changes the background colour on hover for portfolio card buttons */
 }
 
 /*** Transition Delays ***/
-.port-card:nth-child(2){
+
+/* Makes each portfolio card staggered */
+
+.port-card:nth-child(2){ /* 2nd portfolio card */
     transition-delay: 200ms;
 }
 
-.port-card:nth-child(3){
+.port-card:nth-child(3){ /* 3rd portfolio card */
     transition-delay: 400ms;
 }
 
-.heading:nth-child(2) {
+/* Makes each heading line staggered */
+
+.heading:nth-child(2) { /* 'Louise' */
     transition-delay: 50ms;
 }
 
-.heading:nth-child(3) {
+.heading:nth-child(3) { /* 'Claughton' */
     transition-delay: 100ms;
 }
 
-.heading:nth-child(4) {
+.heading:nth-child(4) { /* 'Web Designer & Developer */
     transition-delay: 150ms;
 }
 
-.about:nth-child(2) {
+/* Other Delays */
+
+/* Makes the text on the work page staggered against the images */
+
+.text-container {
     transition-delay: 200ms;
 }
-
-.contact:nth-child(2) {
-    transition-delay: 200ms;
-}
-
-/*** WORK PAGE ***/
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-  }
-  
-  .content-item {
-    display: none;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .image-container, .text-container {
-    transition: opacity 1s ease, transform 1s ease;
-  }
-  
-  .work-hidden {
-    opacity: 0;
-  }
-  
-  .work-show {
-    opacity: 1;
-  }
-  
-  .full-width-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
