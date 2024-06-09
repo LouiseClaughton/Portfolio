@@ -10,17 +10,30 @@ h1, h2, h3 {
 
 /**** Nav Bar ****/
 .nav-link {
+    color: black;
     text-transform: uppercase;
     font-family: 'Sofia Sans';
     font-weight: 1000;
 }
 
-/*** Homepage ***/
+.navbar {
+    background-color: white;
+}
+
+body.dark-mode .nav-link {
+    color: white;
+}
+
+body.dark-mode .navbar {
+    background-color: black;
+}
+
+/*** Homepage (Light) ***/
 
 /**** Header ****/
 #header {
     background-color: #F9E0ED;
-    height: 600px;
+    height: 100vh;
     justify-content: center;
     align-content: center;
 }
@@ -32,7 +45,7 @@ h1, h2, h3 {
 /**** Work ****/
 #work {
     background-color: #FFFCF4;
-    height: 900px;
+    /* height: 100vh; */
 }
 
 #work-heading {
@@ -97,44 +110,63 @@ ul {
     padding: 50px;
 }
 
-/*** Work Page ***/
+/*** Homepage (Dark) ***/
 
-#work {
-    overflow-x: hidden;
+/**** Header ****/
+body.dark-mode #header {
+    background-color: #4A3748;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
 }
 
-#project-1 {
-    background-color: #F9E0ED;
-}
-
-#project-2 {
-    background-color: #FFFCF4;
-}
-
-#project-3 {
-    background-color: #D9EFF0;
-}
-
-.image-container,
-.text-container {
+body.dark-mode .heading-text {
     text-align: center;
-    align-self: center;
+    color: white;
+}
+
+/**** Work ****/
+body.dark-mode #work {
+    background-color: #322431;
+}
+
+body.dark-mode #work-heading {
+    color: white;
+}
+
+/**** About ****/
+body.dark-mode #about {
+    background-color: #4A3748;
+}
+
+.skill {
+    background-color: white;
+    color: black;
+}
+
+/**** Contact ****/
+body.dark-mode #contact {
+    background-color: #322431;
 }
 
 /**** Text Styles ****/
+
 h1.main-heading {
+    color: black;
     font-family: Quicksand;
     font-weight: bold;
     font-size: 128px;
 }
 
 h2.main-heading {
+    color: black;
     font-family: Quicksand;
     font-weight: normal;
     font-size: 96px;
 }
 
 .heading-bold {
+    color: black;
     font-family: Quicksand;
     font-weight: bold;
     font-size: 70px;
@@ -143,6 +175,7 @@ h2.main-heading {
 }
 
 .heading-light {
+    color: black;
     font-family: Quicksand;
     font-weight: normal;
     font-size: 70px;
@@ -151,6 +184,48 @@ h2.main-heading {
 }
 
 .subheading {
+    color: black;
+    font-family: 'Sofia Sans';
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/*** Dark Mode ***/
+
+body.dark-mode h1.main-heading {
+    color: white;
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 128px;
+}
+
+body.dark-mode h2.main-heading {
+    color: white;
+    font-family: Quicksand;
+    font-weight: normal;
+    font-size: 96px;
+}
+
+body.dark-mode .heading-bold {
+    color: white;
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body.dark-mode .heading-light {
+    color: white;
+    font-family: Quicksand;
+    font-weight: normal;
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body.dark-mode .subheading {
+    color: white;
     font-family: 'Sofia Sans';
     font-weight: bold;
     font-size: 24px;
@@ -179,14 +254,12 @@ h2.main-heading {
     transform: translateX(100%);
 }
 
-.left-slide { /* Animation to slide in from the left */
+.left-slide { /* Animation to slide in all the way from the left */
     transform: translateX(-100%);
 }
 
-#project-1,
-#project-2,
-#project-3 {
-    height: 100vh;
+.part-left-slide { /* Animation to slide in part way from the left */
+    transform: translateX(-20%);
 }
 
 .show {
@@ -235,4 +308,59 @@ h2.main-heading {
 
 .text-container {
     transition-delay: 200ms;
+}
+
+/* Hero Elements */
+
+.day-hero-element {
+    position: absolute;
+}
+
+.night-hero-element {
+    position: absolute;
+    transform: scale(0.3);
+}
+
+body.dark-mode .day-hero-element {
+    opacity: 0;
+}
+
+body.dark-mode .night-hero-element {
+    opacity: 1;
+}
+
+.day-hero-element:nth-child(1) {
+    top: 10%;
+}
+
+.day-hero-element:nth-child(2) {
+    top: 30%;
+    left: 20%;
+}
+
+.day-hero-element:nth-child(3) {
+    right: 15%;
+}
+
+.day-hero-element:nth-child(4) {
+    right: 10%;
+    top: 25%;
+}
+
+.day-hero-element:nth-child(5) {
+    right: 40%;
+    top: 8%;
+}
+
+.day-hero-element:nth-child(6) {
+    left: 20%;
+}
+
+.day-hero-element:nth-child(7) {
+    top: 40%;
+}
+
+.day-hero-element:nth-child(8) {
+    right: 2%;
+    top: 50%;
 }

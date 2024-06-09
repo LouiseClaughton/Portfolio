@@ -11,7 +11,7 @@
     <script src="app.js" defer></script>
   </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,27 +33,39 @@
             </ul>
           </div>
         </div>
+        <button id="mode-toggle">Toggle Mode</button>
       </nav>
 
     <main>
         <!--Header-->
         <section id="header" class="container-fluid">
             <div class="heading-text">
-                <h2 class="subheading heading left-slide hidden">Hi, I'm</h2>
-                <h2 class="main-heading heading left-slide hidden">Louise</h2>
-                <h1 class="main-heading heading left-slide hidden">Claughton</h1>
-                <h2 class="subheading heading left-slide hidden">Web Designer and Developer</h2>
+                <h2 class="subheading heading part-left-slide hidden">Hi, I'm</h2>
+                <h2 class="main-heading heading part-left-slide hidden">Louise</h2>
+                <h1 class="main-heading heading part-left-slide hidden">Claughton</h1>
+                <h2 class="subheading heading part-left-slide hidden">Web Designer and Developer</h2>
             </div>
+            <!-- <div class="hero-elements">
+              <img src="images/day-cloud.png" class="day-hero-element" alt="hero-element-1">
+              <img src="images/day-cloud.png" class="day-hero-element" alt="hero-element-2">
+              <img src="images/day-cloud.png" class="day-hero-element" alt="hero-element-3">
+              <img src="images/day-cloud.png" class="day-hero-element" alt="hero-element-4">
+              <img src="images/day-cloud.png" class="day-hero-element" alt="hero-element-5">
+              <img src="images/day-cloud.png" class="day-hero-element" alt="hero-element-6">
+              <img src="images/day-cloud.png" class="day-hero-element" alt="hero-element-7">
+              <img src="images/day-cloud.png" class="day-hero-element" alt="hero-element-8">
+            </div> -->
         </section>
 
         <!--Featured Work-->
-        <section id="work" class="container-fluid hidden">
+        <section id="work" class="container-fluid">
           <div id="work-heading" class="row">
             <h2 class="heading-light">Featured<span class="heading-bold"> Work</span></h2><!--Seperate row for section heading-->
           </div>
+          <!--Row 1-->
               <div class="row">
                 <!--Card 1-->
-                  <div class="col text-center port-card left-slide hidden m-5">
+                  <div class="col text-center port-card hidden m-5">
                       <div class="card mx-auto">
                           <img src="images/Short and Sweet Thumbnail.png" class="card-img-top" alt="News Homepage">
                               <div class="card-body">
@@ -66,7 +78,7 @@
                       </div>
                   </div>
                 <!--Card 2-->
-                  <div class="col text-center port-card left-slide hidden m-5">
+                  <div class="col text-center port-card hidden m-5">
                       <div class="card mx-auto">
                           <img src="images/News Homepage (Desktop).png" class="card-img-top" alt="...">
                               <div class="card-body">
@@ -78,19 +90,61 @@
                               </div>
                       </div>
                   </div>
-                  <!--Card 3-->
-                    <div class="col text-center port-card left-slide hidden m-5">
-                        <div class="card mx-auto">
-                            <img src="images/Room Thumbnail.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Room Homepage</h5>
-                                    <p class="card-text">A Frontend Mentor challenge to design a homepage for a furnishing company named Room, based on a style guide and brief.</p>
-                                    <button href="#" class="button">About</button>
+                <!--Card 3-->
+                  <div class="col text-center port-card hidden m-5">
+                      <div class="card mx-auto">
+                          <img src="images/Room Thumbnail.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <h5 class="card-title">Room Homepage</h5>
+                                  <p class="card-text">A Frontend Mentor challenge to design a homepage for a furnishing company named Room, based on a style guide and brief.</p>
+                                  <button href="#" class="button">About</button>
                                   <button href="#" class="button">Demo</button>
                                   <button href="#" class="button">GitHub</button>
-                                </div>
-                        </div>
-                    </div>
+                              </div>
+                      </div>
+                  </div>
+
+          <!--Row 2-->
+              <div class="row">
+                <!--Card 1-->
+                  <div class="col text-center port-card hidden m-5">
+                      <div class="card mx-auto">
+                          <img src="images/Short and Sweet Thumbnail.png" class="card-img-top" alt="News Homepage">
+                              <div class="card-body">
+                                  <h5 class="card-title">Short & Sweet</h5>
+                                  <p class="card-text">A self-driven website for a confectionery company with a focus on creating unique and interesting sweets.</p>
+                                  <button href="#" class="button">About</button>
+                                  <button href="#" class="button">Demo</button>
+                                  <button href="#" class="button">GitHub</button>
+                              </div>
+                      </div>
+                  </div>
+                <!--Card 2-->
+                  <div class="col text-center port-card hidden m-5">
+                      <div class="card mx-auto">
+                          <img src="images/News Homepage (Desktop).png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <h5 class="card-title">News Homepage</h5>
+                                  <p class="card-text">A Frontend Mentor challenge to design a homepage for a news website based on a style guide and brief.</p>
+                                  <button href="#" class="button">About</button>
+                                  <button href="#" class="button">Demo</button>
+                                  <button href="#" class="button">GitHub</button>
+                              </div>
+                      </div>
+                  </div>
+                <!--Card 3-->
+                  <div class="col text-center port-card hidden m-5">
+                      <div class="card mx-auto">
+                          <img src="images/Room Thumbnail.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <h5 class="card-title">Room Homepage</h5>
+                                  <p class="card-text">A Frontend Mentor challenge to design a homepage for a furnishing company named Room, based on a style guide and brief.</p>
+                                  <button href="#" class="button">About</button>
+                                  <button href="#" class="button">Demo</button>
+                                  <button href="#" class="button">GitHub</button>
+                              </div>
+                      </div>
+                  </div>
         </section>
 
         <!--About-->
