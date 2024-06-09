@@ -8,7 +8,7 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
-/**** Nav Bar ****/
+/*** NavBar (Light) ***/
 .nav-link {
     color: black;
     text-transform: uppercase;
@@ -20,6 +20,8 @@ h1, h2, h3 {
     background-color: white;
 }
 
+/*** NavBar (Dark) ***/
+
 body.dark-mode .nav-link {
     color: white;
 }
@@ -28,9 +30,8 @@ body.dark-mode .navbar {
     background-color: black;
 }
 
-/*** Homepage (Light) ***/
+/*** Header (Light) ***/
 
-/**** Header ****/
 #header {
     background-color: #F9E0ED;
     height: 100vh;
@@ -42,7 +43,21 @@ body.dark-mode .navbar {
     text-align: center;
 }
 
-/**** Work ****/
+/*** Header (Dark) ***/
+
+body.dark-mode #header {
+    background-color: #4A3748;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+
+body.dark-mode .heading-text {
+    text-align: center;
+    color: white;
+}
+
+/*** Portfolio (Light) ***/
 #work {
     background-color: #FFFCF4;
     /* height: 100vh; */
@@ -59,7 +74,17 @@ body.dark-mode .navbar {
     height: 450px;
 }
 
-/**** About ****/
+/*** Portfolio (Dark) ***/
+
+body.dark-mode #work {
+    background-color: #322431;
+}
+
+body.dark-mode #work-heading {
+    color: white;
+}
+
+/**** About (Light) ****/
 #about {
     background-color: #D9EFF0;
     height: 800px;
@@ -74,6 +99,19 @@ body.dark-mode .navbar {
     padding: 50px;
 }
 
+/*** About (Dark) ***/
+
+body.dark-mode #about {
+    background-color: #4A3748;
+}
+
+/*** Skills (Light) ***/
+
+#skills {
+    background-color: #FFFCF4;
+    height: 150px;
+}
+
 ul {
     list-style: none;
 }
@@ -82,23 +120,29 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .skill {
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    margin: 10px;
+    color: black;
     transition: 0.3s;
     cursor: pointer;
-    border-radius: 30px;
 }
 
-.skill:hover {
-    background-color: hsl(5, 85%, 63%);
+.logo {
+    transform: scale(0.3);
+    position: relative;
 }
 
-/**** Contact ****/
+/*** Skills (Dark) ***/
+
+body.dark-mode #skills {
+    background-color:#322431;
+}
+
+/*** Contact (Light) ***/
+
 #contact {
     background-color: #F9E0ED;
     height: 800px;
@@ -110,46 +154,13 @@ ul {
     padding: 50px;
 }
 
-/*** Homepage (Dark) ***/
+/*** Contact (Dark) ***/
 
-/**** Header ****/
-body.dark-mode #header {
-    background-color: #4A3748;
-    height: 100vh;
-    justify-content: center;
-    align-content: center;
-}
-
-body.dark-mode .heading-text {
-    text-align: center;
-    color: white;
-}
-
-/**** Work ****/
-body.dark-mode #work {
-    background-color: #322431;
-}
-
-body.dark-mode #work-heading {
-    color: white;
-}
-
-/**** About ****/
-body.dark-mode #about {
-    background-color: #4A3748;
-}
-
-.skill {
-    background-color: white;
-    color: black;
-}
-
-/**** Contact ****/
 body.dark-mode #contact {
-    background-color: #322431;
+    background-color:#4A3748;
 }
 
-/**** Text Styles ****/
+/**** Text Styles (Light) ****/
 
 h1.main-heading {
     color: black;
@@ -190,7 +201,7 @@ h2.main-heading {
     font-size: 24px;
 }
 
-/*** Dark Mode ***/
+/*** Text Styles (Dark) ***/
 
 body.dark-mode h1.main-heading {
     color: white;
