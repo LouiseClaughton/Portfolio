@@ -173,9 +173,8 @@ body.dark-mode .link {
 /**** About (Light) ****/
 #about {
     background-color: #D9EFF0;
-    height: 800px;
-    text-align: center;
     padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .about-image {
@@ -207,12 +206,16 @@ ul {
     justify-content: center;
     align-content: center;
     align-items: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
 
 .skill {
     color: black;
     transition: 0.3s;
     cursor: pointer;
+    text-align: center;
+    margin: 20px;
 }
 
 /*** Skills (Dark) ***/
