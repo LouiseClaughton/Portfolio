@@ -426,3 +426,8 @@ body.dark-mode .night-hero-element {
     right: 2%;
     top: 50%;
 } */
+
+/*** Images ***/
+.image {
+    object-fit: cover;
+}
