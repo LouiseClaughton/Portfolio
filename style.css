@@ -37,8 +37,8 @@ body.dark-mode .navbar {
 /*** Header (Light) ***/
 
 #header {
-    background-color: #F9E0ED;
-    height: 100vh;
+    background-image: linear-gradient(to top, #e8fbff, #e9f9ff, #ebf7ff, #eff4ff, #f3f2ff, #f5f0ff, #f8eeff, #fcebff, #fde9ff, #fde6ff, #fee4ff, #ffe1ff);
+    height: 85vh;
     justify-content: center;
     align-content: center;
     padding-top: 80px;
@@ -51,10 +51,7 @@ body.dark-mode .navbar {
 /*** Header (Dark) ***/
 
 body.dark-mode #header {
-    background-color: #4A3748;
-    height: 100vh;
-    justify-content: center;
-    align-content: center;
+    background-image: linear-gradient(to top, #72526f, #704e6d, #6d4b6a, #6b4768, #694465, #664262, #623f5e, #5f3d5b, #5a3c56, #543a51, #4f394d, #4a3748);
 }
 
 body.dark-mode .heading-text {
@@ -64,6 +61,7 @@ body.dark-mode .heading-text {
 
 /*** Portfolio (Light) ***/
 #work {
+    /* background-color: #e8fbff; */
     background-color: #FFFCF4;
     padding-top: 80px;
 }
@@ -133,20 +131,6 @@ body.dark-mode .heading-text {
     margin: 20px;
 }
 
-.button {
-    background-color: black;
-    color: white;
-    padding: 0.5em 1em;
-    border: none;
-    border-radius: 30px;
-    margin: 10px;
-    transition: 0.3s;
-}
-
-.button:hover {
-    background-color: hsl(5, 85%, 63%); /*Changes the background colour on hover for buttons */
-}
-
 .link {
     text-decoration: none;
     color: white;
@@ -155,7 +139,7 @@ body.dark-mode .heading-text {
 /*** Portfolio (Dark) ***/
 
 body.dark-mode #work {
-    background-color: #322431;
+    background-color: #4A3748;
 }
 
 body.dark-mode #work-heading {
@@ -172,7 +156,7 @@ body.dark-mode .link {
 
 /**** About (Light) ****/
 #about {
-    background-color: #D9EFF0;
+    background-color: #e8fbff;
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -186,13 +170,12 @@ body.dark-mode .link {
 /*** About (Dark) ***/
 
 body.dark-mode #about {
-    background-color: #4A3748;
+    background-color: #72526F;
 }
 
 /*** Skills (Light) ***/
 
 #skills {
-    background-color: #FFFCF4;
     height: 150px;
 }
 
@@ -201,11 +184,6 @@ ul {
 }
 
 .skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
     padding-top: 60px;
     padding-bottom: 20px;
 }
@@ -216,18 +194,19 @@ ul {
     cursor: pointer;
     text-align: center;
     margin: 20px;
+    font-family: Questrial;
 }
 
-/*** Skills (Dark) ***/
-
-body.dark-mode #skills {
-    background-color:#322431;
+body.dark-mode .skill {
+    color: white;
 }
+
+
 
 /*** Contact (Light) ***/
 
 #contact {
-    background-color: #F9E0ED;
+    background-color: #f5f0ff;
     height: 800px;
     padding-top: 80px;
 }
@@ -241,7 +220,17 @@ body.dark-mode #skills {
 /*** Contact (Dark) ***/
 
 body.dark-mode #contact {
-    background-color:#4A3748;
+    background-color: #4A3748;
+}
+
+/*** Footer ***/
+#footer {
+    height: 70vh;
+    background-color: white;
+}
+
+body.dark-mode #footer {
+    background-color: black;
 }
 
 /**** Text Styles (Light) ****/
@@ -280,50 +269,60 @@ h2.main-heading {
 
 .subheading {
     color: black;
-    font-family: 'Sofia Sans';
+    font-family: Quicksand;
     font-weight: bold;
     font-size: 24px;
+}
+
+.body {
+    color: black;
+    font-family: Questrial;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    font-family: Questrial;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 30px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #FFBCDF; /*Changes the background colour on hover for buttons */
+    color: black;
+}
+
+a:hover {
+    color: black;
 }
 
 /*** Text Styles (Dark) ***/
 
 body.dark-mode h1.main-heading {
     color: white;
-    font-family: Quicksand;
-    font-weight: bold;
-    font-size: 128px;
 }
 
 body.dark-mode h2.main-heading {
     color: white;
-    font-family: Quicksand;
-    font-weight: normal;
-    font-size: 96px;
 }
 
 body.dark-mode .heading-bold {
     color: white;
-    font-family: Quicksand;
-    font-weight: bold;
-    font-size: 70px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 body.dark-mode .heading-light {
     color: white;
-    font-family: Quicksand;
-    font-weight: normal;
-    font-size: 70px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 body.dark-mode .subheading {
     color: white;
-    font-family: 'Sofia Sans';
-    font-weight: bold;
-    font-size: 24px;
+}
+
+body.dark-mode .body {
+    color: white;
 }
 
 /*** Animations ***/
@@ -377,58 +376,6 @@ body.dark-mode .subheading {
 
 /* Hero Elements */
 
-/* .day-hero-element {
-    position: absolute;
-}
-
-.night-hero-element {
-    position: absolute;
-    transform: scale(0.3);
-}
-
-body.dark-mode .day-hero-element {
-    opacity: 0;
-}
-
-body.dark-mode .night-hero-element {
-    opacity: 1;
-}
-
-.day-hero-element:nth-child(1) {
-    top: 10%;
-}
-
-.day-hero-element:nth-child(2) {
-    top: 30%;
-    left: 20%;
-}
-
-.day-hero-element:nth-child(3) {
-    right: 15%;
-}
-
-.day-hero-element:nth-child(4) {
-    right: 10%;
-    top: 25%;
-}
-
-.day-hero-element:nth-child(5) {
-    right: 40%;
-    top: 8%;
-}
-
-.day-hero-element:nth-child(6) {
-    left: 20%;
-}
-
-.day-hero-element:nth-child(7) {
-    top: 40%;
-}
-
-.day-hero-element:nth-child(8) {
-    right: 2%;
-    top: 50%;
-} */
 
 /*** Images ***/
 .image {
