@@ -429,3 +429,29 @@ body.dark-mode .body {
 .text-container {
     transition-delay: 200ms;
 }
+
+/*** The Little Library Foundation ***/
+#library-brief {
+    background-color: black;
+    color: white;
+    height: 70vh;
+}
+
+#library-heading {
+    font-family: 'Averia Serif Libre';
+}
+
+#library-wireframes,
+#library-fonts {
+    margin: 50px;
+}
+
+.font-image {
+    height: 300px;
+    width: auto;
+}
+
+.wireframe-image {
+    width: px;
+    height: auto;
+}
