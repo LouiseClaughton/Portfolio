@@ -63,10 +63,6 @@ body.dark-mode .navbar {
     padding-top: 80px;
 }
 
-.heading-text {
-    text-align: center;
-}
-
 /*** Header (Dark) ***/
 
 body.dark-mode #header {
@@ -182,10 +178,10 @@ body.dark-mode .link {
     padding-bottom: 80px;
 }
 
-.about-body {
+/* .about-body {
     text-align: center;
     padding: 0 400px 0 400px;
-}
+} */
 
 /*** About (Dark) ***/
 
@@ -233,10 +229,6 @@ body.dark-mode .skill {
     padding-top: 80px;
 }
 
-.contact {
-    text-align: center;
-}
-
 input[type=text], 
 input[type=email] {
     width: 100%;
@@ -274,6 +266,14 @@ input[type=email] {
     padding: 20px 580px 40px 580px;
   }
 
+  @media screen and (max-width: 600px) {
+    #form, .input[type=submit], .input[type=text], .input[type=email], .input[type=textarea] {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
 /*** Contact (Dark) ***/
 
 body.dark-mode #contact {
@@ -300,14 +300,14 @@ h1.main-heading {
     color: black;
     font-family: Quicksand;
     font-weight: bold;
-    font-size: 128px;
+    /* font-size: 128px; */
 }
 
 h2.main-heading {
     color: black;
     font-family: Quicksand;
     font-weight: normal;
-    font-size: 96px;
+    /* font-size: 96px; */
 }
 
 .heading-bold {
