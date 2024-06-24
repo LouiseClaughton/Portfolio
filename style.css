@@ -96,9 +96,7 @@ body.dark-mode .heading-text {
     padding-bottom: 20px;
 }
 
-.portfolio-item {
-    border: solid 2px black;
-}
+
 
 .scroll {
     width: 400px;
@@ -114,42 +112,46 @@ body.dark-mode .heading-text {
     background-position: bottom;
 }
 
+.portfolio-item {
+    border: solid 2px black;
+}
+
 .image1 {
     background: url(images/Short\ &\ Sweet.png);
-    width: 550px;
-    height: 450px;
+    width: 30vw;
+    height: 50vh;
     background-size: cover;
     background-position: top;
 }
 
 .image2 {
     background: url(images/The\ Little\ Library\ Foundation.png);
-    width: 550px;
-    height: 450px;
+    width: 30vw;
+    height: 50vh;
     background-size: cover;
     background-position: top;
 }
 
 .image3 {
     background: url(images/MURAL.png);
-    width: 550px;
-    height: 450px;
+    width: 30vw;
+    height: 50vh;
     background-size: cover;
     background-position: top;
 }
 
 .image4 {
     background: url(images/Sweet\ Slumber.png);
-    width: 550px;
-    height: 450px;
-    background-size: cover;
-    background-position: top;
 }
 
 .image5 {
     background-color: grey;
-    width: 550px;
-    height: 450px;
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio-item {
+        width: 70vw;
+    }
 }
 
 .portfolio-heading {
