@@ -44,10 +44,10 @@
           <div id="header" class="container-fluid text-center">
             <div class="row">
               <div class="col">
-                <h2 class="subheading heading part-left-slide hidden display-6">Hi, I'm</h2>
+                <h2 id="subheading-sub" class="subheading heading part-left-slide hidden display-6">Hi, I'm</h2>
                 <h2 class="main-heading heading part-left-slide hidden display-1">Louise</h2>
                 <h1 class="main-heading heading part-left-slide hidden display-1">Claughton</h1>
-                <h2 class="subheading heading part-left-slide hidden display-6">Web Designer and Developer</h2>
+                <h2 id="subheading-main" class="subheading heading part-left-slide hidden display-6">Web Designer and Developer</h2>
               </div>
             </div>
           </div>
@@ -61,8 +61,8 @@
                 </div>
                 <div class="row">
                   <!--Item 1-->
-                    <div class="col-sm d-flex justify-content-center mt-5 mb-5 flex-wrap hidden text-center portfolio-inner">
-                        <a href="https://louiseclaughton.github.io/Short-and-Sweet/" target="_blank"><div class="scroll image1 portfolio-item"></div></a>
+                    <div class="col-lg-6 col-xl-4 d-flex justify-content-center flex-wrap hidden text-center portfolio-inner">
+                        <a href="https://louiseclaughton.github.io/Short-and-Sweet/" target="_blank"><div id="image1" class="scroll img-fluid portfolio-item"></div></a>
                             <div class="w-100"></div>
                         <h2 class="subheading portfolio-heading h2 mt-4">Short and Sweet</h2>
                             <div class="w-100"></div>
@@ -74,8 +74,8 @@
                         <a href="https://github.com/LouiseClaughton/Short-and-Sweet" target="_blank" class="link"><button class="button">GitHub</button></a>
                     </div>
                   <!--Item 2-->
-                    <div class="col-sm d-flex justify-content-center mt-5 mb-5 flex-wrap hidden text-center">
-                        <a href="https://louiseclaughton.github.io/The-Little-Library-Foundation/" target="_blank"><div class="scroll image2 portfolio-item"></div></a>
+                    <div class="col-lg-6 col-xl-4 d-flex justify-content-center flex-wrap hidden text-center">
+                        <a href="https://louiseclaughton.github.io/The-Little-Library-Foundation/" target="_blank"><div id="image2" class="scroll img-fluid portfolio-item"></div></a>
                             <div class="w-100"></div>
                         <h2 class="subheading portfolio-heading h2 mt-4">The Little Library Foundation</h2>
                             <div class="w-100"></div>
@@ -87,8 +87,8 @@
                         <a href="https://github.com/LouiseClaughton/The-Little-Library-Foundation" target="_blank" class="link"><button class="button">GitHub</button></a>
                     </div>
                   <!--Item 3-->
-                    <div class="col-sm d-flex justify-content-center mt-5 mb-5 me-4 flex-wrap hidden text-center">
-                        <a href="https://mural-6bfeb9.webflow.io/" target="_blank"><div class="scroll image3 portfolio-item"></div></a>
+                    <div class="col-lg-6 col-xl-4 d-flex justify-content-center flex-wrap hidden text-center">
+                        <a href="https://mural-art.webflow.io/" target="_blank"><div id="image3" class="scroll img-fluid portfolio-item"></div></a>
                             <div class="w-100"></div>
                         <h2 class="subheading portfolio-heading h2 mt-4">MURAL</h2>
                             <div class="w-100"></div>
@@ -96,7 +96,7 @@
                             <div class="w-100"></div>
                         <p class="body text-center" style="font-weight: bold;">WEBFLOW</p>
                             <div class="w-100"></div>
-                        <a href="https://mural-6bfeb9.webflow.io/" target="_blank" class="link"><button class="button">Demo</button></a>
+                        <a href="https://mural-art.webflow.io/" target="_blank" class="link"><button class="button">Demo</button></a>
                     </div>
                 </div>
             </div>
@@ -141,9 +141,7 @@
                         <h2 class="heading-light display-1">About Me</h2>
                         <p class="body about-body ms-5 me-5">I'm Louise Claughton, a web designer and developer, with a focus on creative and visually inspiring websites. I graduated from Leeds Arts University with a 
                         Bachelor of Arts, and decided to combine my love of the visual medium with my love for technology and problem solving. I took the Web Design and Development Bootcamp
-                        from the Coder's Guild to help build some hard skills, and enjoy learning new technologies and ways of doing things.<br><br>
-
-                        When I'm not coding websites, I enjoy playing video games and reading, especially fantasy and sci-fi which have a focus on storytelling and worldbuilding.
+                        from the Coder's Guild to help build some hard skills, and enjoy learning new technologies and ways of doing things.
                         </p>
                     </div>
                 </div>
@@ -151,60 +149,58 @@
         </section> 
             <!--Skills-->
         <section>
-          <div id="skills" class="skills-list">
-            <div class="row">
-              <div class="col-sm"></div><!--Empty column for centering-->
-              <div class="col-sm skill">
-                <img src="images/logos/html (black).png" class="logo img-fluid">
+          <div id="skills" class="skills-list container-fluid text-center justify-content-center">
+            <div class="row flex-xl-nowrap"><!--On XL screens, content does not wrap. This prevents one logo from being below the others if it will not fit and the columns become 3 wide as on smaller screens-->
+              <div class="col-sm-4 col-xl skill"> <!--On XS screens (<576px) columns are stacked vertically. Between SM (576px) and XL (1200px) screens, there are 3 columns. On XL screens, columns are stacked horizontally-->
+                <img src="images/logos/html (black).png" class="logo m-2"><!--Small margins around each logo to keep them from crashing into each other-->
                 <h6 class="skill-caption">HTML</h6>
               </div>
-              <div class="col-sm skill">
-                <img src="images/logos/css (black).png" class="logo img-fluid">
+              <div class="col-sm-4 col-xl skill">
+                <img src="images/logos/css (black).png" class="logo m-2">
                 <h6 class="skill-caption">CSS</h6>
               </div>
-              <div class="col-sm skill">
-                <img src="images/logos/javascript (black).png" class="logo img-fluid">
+              <div class="col-sm-4 col-xl skill">
+                <img src="images/logos/javascript (black).png" class="logo m-2">
                 <h6 class="skill-caption">Javascript</h6>
               </div>
-              <div class="col-sm skill">
-                <img src="images/logos/github (black).png" class="logo img-fluid">
+              <div class="col-sm-4 col-xl skill">
+                <img src="images/logos/github (black).png" class="logo m-2">
                 <h6 class="skill-caption">GitHub</h6>
               </div>
-              <div class="col-sm skill">
-                <img src="images/logos/adobe (black).png" class="logo img-fluid">
+              <div class="col-sm-4 col-xl skill">
+                <img src="images/logos/adobe (black).png" class="logo m-2">
                 <h6 class="skill-caption">Adobe</h6>
               </div>
-              <div class="col-sm skill">
-                <img src="images/logos/bootstrap (black).png" class="logo img-fluid">
+              <div class="col-sm-4 col-xl skill">
+                <img src="images/logos/bootstrap (black).png" class="logo m-2">
                 <h6 class="skill-caption">Bootstrap</h6>
               </div>
-              <div class="col-sm skill">
-                <img src="images/logos/figma (black).png" class="logo img-fluid">
+              <div class="col-sm-4 col-xl skill">
+                <img src="images/logos/figma (black).png" class="logo m-2">
                 <h6 class="skill-caption">Figma</h6>
               </div>
-              <div class="col-sm skill">
-                <img src="images/logos/wordpress (black).png" class="logo img-fluid">
+              <div class="col-sm-4 col-xl skill">
+                <img src="images/logos/wordpress (black).png" class="logo m-2">
                 <h6 class="skill-caption">Wordpress</h6>
               </div>
-              <div class="col-sm skill">
-                <img src="images/logos/webflow(black).png" class="logo img-fluid">
+              <div class="col-sm-4 col-xl skill">
+                <img src="images/logos/webflow(black).png" class="logo m-2">
                 <h6 class="skill-caption">Webflow</h6>
               </div>
-              <div class="col-sm"></div><!--Empty column for centering-->
             </div>
         </section>
         
 
         <!--Contact-->
-        <section>
-          <div id="contact" class="row text-center">
+        <section id="contact" class="container-fluid">
+          <div class="row text-center">
               <h2 class="heading-light contact hidden display-1">Contact</h2>
-              <p class="contact body">Email me at <strong>louiseeclaughton@gmail.com</strong> or fill out the form below to get in touch:</p>
+              <p class="contact body ps-5 pe-5">Email me at <strong>louiseeclaughton@gmail.com</strong> or fill out the form below to get in touch:</p>
               <form method="GET" action="mailto:louiseeclaughton@gmail.com" id="form">
                 <input type="text" placeholder="Name" required>
                 <input type="email" placeholder="Email Address" required>
                 <input type="textarea" placeholder="Message" required>
-                <button type="submit" class="button" style="text-align: center">Submit</button>
+                <button type="submit" class="button">Submit</button>
               </form>
             </div>
           </div>

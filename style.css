@@ -1,12 +1,16 @@
 * {
     padding: 0;
     margin: 0;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;
 }
 
 body {
+    position: absolute;
+    left: -10px; 
+    right: -10px; /* Adds 10px space at either side of the body to allow for slightly larger screens and scrollbars */
     overflow-x: hidden;
-    width: 100vw; /*Makes the content fill the screen size */
 }
 
 h1, h2, h3 {
@@ -48,7 +52,7 @@ body.dark-mode #mode-toggle {
     #mode-toggle {
         margin-left: auto;
         margin-right: 10px;
-    }
+    } /* On smaller screens, keep the toggle button on the left */
 }
 
 /*** NavBar (Dark) ***/
@@ -65,10 +69,11 @@ body.dark-mode .navbar {
 
 #header {
     background-image: linear-gradient(to top, #e8fbff, #e9f9ff, #ebf7ff, #eff4ff, #f3f2ff, #f5f0ff, #f8eeff, #fcebff, #fde9ff, #fde6ff, #fee4ff, #ffe1ff);
-    height: 85vh;
+    height: auto;
     justify-content: center;
     align-content: center;
-    padding-top: 80px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 /*** Header (Dark) ***/
@@ -84,9 +89,9 @@ body.dark-mode .heading-text {
 
 /*** Portfolio (Light) ***/
 #work {
-    /* background-color: #e8fbff; */
     background-color: #FFFCF4;
     padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 #work-heading {
@@ -95,8 +100,6 @@ body.dark-mode .heading-text {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
-
 
 .scroll {
     width: 400px;
@@ -116,42 +119,25 @@ body.dark-mode .heading-text {
     border: solid 2px black;
 }
 
-.image1 {
+#image1 {
     background: url(images/Short\ &\ Sweet.png);
-    width: 30vw;
     height: 50vh;
     background-size: cover;
     background-position: top;
 }
 
-.image2 {
+#image2 {
     background: url(images/The\ Little\ Library\ Foundation.png);
-    width: 30vw;
     height: 50vh;
     background-size: cover;
     background-position: top;
 }
 
-.image3 {
+#image3 {
     background: url(images/MURAL.png);
-    width: 30vw;
     height: 50vh;
     background-size: cover;
     background-position: top;
-}
-
-.image4 {
-    background: url(images/Sweet\ Slumber.png);
-}
-
-.image5 {
-    background-color: grey;
-}
-
-@media screen and (max-width: 600px) {
-    .portfolio-item {
-        width: 70vw;
-    }
 }
 
 .portfolio-heading {
@@ -188,11 +174,6 @@ body.dark-mode .link {
     padding-bottom: 80px;
 }
 
-/* .about-body {
-    text-align: center;
-    padding: 0 400px 0 400px;
-} */
-
 /*** About (Dark) ***/
 
 body.dark-mode #about {
@@ -201,10 +182,6 @@ body.dark-mode #about {
 
 /*** Skills (Light) ***/
 
-#skills {
-    height: 150px;
-}
-
 ul {
     list-style: none;
 }
@@ -212,6 +189,7 @@ ul {
 .skills-list {
     padding-top: 20px;
     padding-bottom: 20px;
+    overflow: hidden;
 }
 
 .skill {
@@ -219,7 +197,6 @@ ul {
     transition: 0.3s;
     cursor: pointer;
     text-align: center;
-    margin: 20px;
     font-family: Questrial;
 }
 
@@ -230,6 +207,7 @@ body.dark-mode .skill {
 .skill-caption {
     margin-top: 10px;
 }
+
 
 /*** Contact (Light) ***/
 
@@ -273,15 +251,8 @@ input[type=email] {
 
   #form {
     border-radius: 5px;
-    padding: 20px 580px 40px 580px;
-  }
-
-  @media screen and (max-width: 600px) {
-    #form, .input[type=submit], .input[type=text], .input[type=email], .input[type=textarea] {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
 /*** Contact (Dark) ***/
@@ -377,6 +348,16 @@ body.dark-mode .button:hover {
 
 a:hover {
     color: black;
+}
+
+#subheading-main {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#subheading-sub {
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 /*** Text Styles (Dark) ***/
@@ -478,4 +459,66 @@ body.dark-mode .body {
 .wireframe-image {
     width: px;
     height: auto;
+}
+
+/* 2xl */
+
+@media (min-width: 1440px) {
+    .flex-container {
+        max-width: none; /* The container fits the screen width */
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) and (max-width: 1439px) {
+    .flex-container {
+        max-width: 1280px;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .flex-container {
+        max-width: 1024px;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+/* md */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .flex-container {
+        max-width: 768px;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+/*s*/
+@media (min-width: 640px) and (max-width: 767px) {
+    .flex-container {
+        max-width: 640px;
+    }
+}
+
+/*xs*/
+@media (min-width: 475px) and (max-width: 639px) {
+    .flex-container {
+        max-width: 475px; /* Container size shrinks with screen size, keeping the site responsive on all screen sizes */
+    }
+}
+
+/*2xs*/
+@media (min-width: 320px) and (max-width: 474px) {
+    .body {
+        overflow-x: hidden;
+    }
+
+    .flex-container {
+        max-width: 320px; /* Container size shrinks with screen size, keeping the site responsive on all screen sizes */
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 0 auto;
+    }
+
 }
