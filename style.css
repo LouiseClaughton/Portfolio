@@ -22,7 +22,11 @@ h1, h2, h3 {
     color: black;
     text-transform: uppercase;
     font-family: 'Sofia Sans';
-    font-weight: 1000;
+}
+
+.nav-link:hover {
+    color: black;
+    font-weight: 600;
 }
 
 .navbar {
