@@ -101,6 +101,7 @@ body.dark-mode .heading-text {
 .scroll {
     width: 350px;
     height: 450px;
+    max-width: 100%;
     background-size: cover;
     background-position: top;
     transition: 4s;
@@ -116,25 +117,37 @@ body.dark-mode .heading-text {
     border: solid 2px black;
 }
 
-#image1 {
+.image1 {
     background: url(images/Short\ &\ Sweet.png);
-    height: 50vh;
+    height: 450px;
     background-size: cover;
     background-position: top;
 }
 
-#image2 {
+.image2 {
     background: url(images/The\ Little\ Library\ Foundation.png);
-    height: 50vh;
+    height: 450px;
     background-size: cover;
     background-position: top;
 }
 
-#image3 {
+.image3 {
     background: url(images/MURAL.png);
-    height: 50vh;
+    height: 450px;
     background-size: cover;
     background-position: top;
+}
+
+#image-1 {
+    height: 50vh;
+}
+
+#image-2 {
+    height: 50vh;
+}
+
+#image-3 {
+    height: 50vh;
 }
 
 .portfolio-heading {
@@ -205,6 +218,52 @@ body.dark-mode .skill {
     margin-top: 10px;
 }
 
+#skills {
+    background-color: #FFFCF4;
+}
+
+body.dark-mode #skills {
+    background-color: #4A3748;
+}
+
+
+/* Dark Mode Logos */
+
+body.dark-mode .logo-1 { /* Changing the image for each logo to be the white version to stand out against the dark background */
+    content: url('images/logos/html\ \(white\).png');
+}
+
+body.dark-mode .logo-2 {
+    content: url('images/logos/css\ \(white\).png');
+}
+
+body.dark-mode .logo-3 {
+    content: url('images/logos/javascript\ \(white\).png');
+}
+
+body.dark-mode .logo-4 {
+    content: url('images/logos/github\ \(white\).png')
+}
+
+body.dark-mode .logo-5 {
+    content: url('images/logos/adobe\ \(white\).png')
+}
+
+body.dark-mode .logo-6 {
+    content: url('images/logos/bootstrap\ \(white\).png')
+}
+
+body.dark-mode .logo-7 {
+    content: url('images/logos/figma\ \(white\).png')
+}
+
+body.dark-mode .logo-8 {
+    content: url('images/logos/wordpress\ \(white\).png')
+}
+
+body.dark-mode .logo-9 {
+    content: url('images/logos/webflow\(white\).png')
+}
 
 /*** Contact (Light) ***/
 
@@ -256,7 +315,7 @@ input[type=email] {
 /*** Contact (Dark) ***/
 
 body.dark-mode #contact {
-    background-color: #4A3748;
+    background-color: #72526F;
 }
 
 /*** Footer ***/
@@ -341,7 +400,8 @@ body.dark-mode .button {
 }
 
 body.dark-mode .button:hover {
-    background-color: #72526f;
+    background-color: black;
+    color: white;
 }
 
 a:hover {
