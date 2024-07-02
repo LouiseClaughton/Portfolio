@@ -69,11 +69,8 @@ body.dark-mode .navbar {
 
 #header {
     background-image: linear-gradient(to top, #e8fbff, #e9f9ff, #ebf7ff, #eff4ff, #f3f2ff, #f5f0ff, #f8eeff, #fcebff, #fde9ff, #fde6ff, #fee4ff, #ffe1ff);
-    height: auto;
-    justify-content: center;
-    align-content: center;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 250px;
+    padding-bottom: 120px;
 }
 
 /*** Header (Dark) ***/
@@ -102,7 +99,7 @@ body.dark-mode .heading-text {
 }
 
 .scroll {
-    width: 400px;
+    width: 350px;
     height: 450px;
     background-size: cover;
     background-position: top;
@@ -253,6 +250,7 @@ input[type=email] {
     border-radius: 5px;
     padding-left: 50px;
     padding-right: 50px;
+    max-width: 850px;
   }
 
 /*** Contact (Dark) ***/
