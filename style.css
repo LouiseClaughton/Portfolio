@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Watermelon;
+    src: url(fonts/Watermelon-Regular.otf);
+}
+
 body {
     position: absolute;
     left: -10px; 
@@ -13,8 +18,67 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3 {
+h1, h2, h3, .heading-body, .button {
     text-transform: uppercase;
+}
+
+/**** Text Styles (Light) ****/
+
+.main-heading {
+    color: black;
+    font-family: Watermelon;
+    font-weight: bold;
+    font-size: 65px;
+}
+
+.subheading {
+    color: black;
+    font-family: Sniglet;
+    font-size: 24px;
+}
+
+.body {
+    color: black;
+    font-family: Sniglet;
+}
+
+/* Buttons */
+
+.button {
+    background-color: #A1E1E4;
+    color: black;
+    font-family: Sniglet;
+    padding: 0.5em 1em;
+    border: solid black 3px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+body.dark-mode .button {
+    background-color: white;
+    color: black;
+}
+
+.button:hover {
+    background-color: #FFBCDF; /*Changes the background colour on hover for buttons */
+    color: black;
+}
+
+body.dark-mode .button:hover {
+    background-color: black;
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
+/*** Text Styles (Dark) ***/
+
+body.dark-mode .main-heading,
+body.dark-mode .subheading,
+body.dark-mode .body {
+    color: white;
 }
 
 /*** NavBar (Light) ***/
@@ -52,13 +116,6 @@ body.dark-mode #mode-toggle {
     background-image: linear-gradient(to right top, #e9e9e9, #e4eaf3, #d6edfb, #c3f2fb, #b7f6f0);
 }
 
-@media screen and (max-width: 600px) {
-    #mode-toggle {
-        margin-left: auto;
-        margin-right: 10px;
-    } /* On smaller screens, keep the toggle button on the left */
-}
-
 /*** NavBar (Dark) ***/
 
 body.dark-mode .nav-link {
@@ -72,9 +129,25 @@ body.dark-mode .navbar {
 /*** Header (Light) ***/
 
 #header {
-    background-image: linear-gradient(to top, #e8fbff, #e9f9ff, #ebf7ff, #eff4ff, #f3f2ff, #f5f0ff, #f8eeff, #fcebff, #fde9ff, #fde6ff, #fee4ff, #ffe1ff);
+    /* background-image: linear-gradient(to top, #e8fbff, #e9f9ff, #ebf7ff, #eff4ff, #f3f2ff, #f5f0ff, #f8eeff, #fcebff, #fde9ff, #fde6ff, #fee4ff, #ffe1ff); */
+    background-color: #F9E0ED;
     padding-top: 250px;
     padding-bottom: 120px;
+}
+
+.heading-container {
+    max-width: 700px;
+    max-height: 120px;
+    background-color: white;
+    border-top: solid black 3px;
+    border-bottom: solid black 5px;
+    border-left: solid black 3px;
+    border-right: solid black 5px;
+}
+
+.heading-body {
+    font-family: Sniglet;
+    margin: 1rem;
 }
 
 /*** Header (Dark) ***/
@@ -93,13 +166,6 @@ body.dark-mode .heading-text {
     background-color: #FFFCF4;
     padding-top: 80px;
     padding-bottom: 80px;
-}
-
-#work-heading {
-    grid-column: span 2;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .scroll {
@@ -336,118 +402,6 @@ body.dark-mode #footer {
     padding-top: 50px;
 }
 
-/**** Text Styles (Light) ****/
-
-h1.main-heading {
-    color: black;
-    font-family: Quicksand;
-    font-weight: bold;
-    /* font-size: 128px; */
-}
-
-h2.main-heading {
-    color: black;
-    font-family: Quicksand;
-    font-weight: normal;
-    /* font-size: 96px; */
-}
-
-.heading-bold {
-    color: black;
-    font-family: Quicksand;
-    font-weight: bold;
-    font-size: 70px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.heading-light {
-    color: black;
-    font-family: Quicksand;
-    font-weight: normal;
-    font-size: 70px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.subheading {
-    color: black;
-    font-family: Quicksand;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.body {
-    color: black;
-    font-family: Questrial;
-}
-
-.button {
-    background-color: black;
-    color: white;
-    font-family: Questrial;
-    padding: 0.5em 1em;
-    border: none;
-    border-radius: 30px;
-    margin: 10px;
-    transition: 0.3s;
-}
-
-body.dark-mode .button {
-    background-color: white;
-    color: black;
-}
-
-.button:hover {
-    background-color: #FFBCDF; /*Changes the background colour on hover for buttons */
-    color: black;
-}
-
-body.dark-mode .button:hover {
-    background-color: black;
-    color: white;
-}
-
-a:hover {
-    color: black;
-}
-
-#subheading-main {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-#subheading-sub {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-/*** Text Styles (Dark) ***/
-
-body.dark-mode h1.main-heading {
-    color: white;
-}
-
-body.dark-mode h2.main-heading {
-    color: white;
-}
-
-body.dark-mode .heading-bold {
-    color: white;
-}
-
-body.dark-mode .heading-light {
-    color: white;
-}
-
-body.dark-mode .subheading {
-    color: white;
-}
-
-body.dark-mode .body {
-    color: white;
-}
-
 /*** Animations ***/
 
 .hidden { /* Default style makes everything hidden */
@@ -583,4 +537,11 @@ body.dark-mode .body {
         margin: 0 auto;
     }
 
+}
+
+@media screen and (max-width: 600px) {
+    #mode-toggle {
+        margin-left: auto;
+        margin-right: 10px;
+    } /* On smaller screens, keep the toggle button on the left */
 }
