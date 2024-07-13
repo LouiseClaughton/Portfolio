@@ -142,15 +142,17 @@ body.dark-mode .heading-text {
     background-position: top;
 }
 
-#image-1 {
-    height: 50vh;
+.image4 {
+    background: url(images/Moonset.png);
+    height: 450px;
+    background-size: cover;
+    background-position: top;
 }
 
-#image-2 {
-    height: 50vh;
-}
-
-#image-3 {
+#image-1,
+#image-2,
+#image-3,
+#image-4 {
     height: 50vh;
 }
 
