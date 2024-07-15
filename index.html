@@ -42,10 +42,10 @@
         <section>
             <div id="header" class="container-fluid text-center justify-content-center">
                 <div class="row">
-                    <div class="col">
+                    <div class="col heading-title-container">
                         <h2 class="subheading heading part-left-slide hidden ms-5 me-5">Hi, I'm</h2>
                         <h2 class="main-heading heading part-left-slide hidden ms-5 me-5">Louise Claughton</h1>
-                        <div class="heading-container container-sm">
+                        <div class="heading-container">
                             <p class="heading-body">A web designer & developer specialising in crafting creative and interactive websites which
                             are optimized for performance and user experience.</p>
                         </div>
@@ -55,80 +55,95 @@
             </div>
         </section>
 
+        <!-- Skills -->
+        <section id="skills-slider">
+            <div class="scroll-container">
+                    <ul class="carousel-primary skill-heading">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>GitHub</li>
+                        <li>Adobe</li>
+                        <li>Figma</li>
+                        <li>Wordpress</li>
+                        <li>Webflow</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                    <ul class="carousel-secondary skill-heading">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>GitHub</li>
+                        <li>Adobe</li>
+                        <li>Figma</li>
+                        <li>Wordpress</li>
+                        <li>Webflow</li>
+                        <li>Bootstrap</li>
+                    </ul>
+            </div>   
+        </section>
+
         <!--Featured Work-->
         <section>
-            <div id="work" class="container-fluid justify-content-center">
-                <div class="row m-5 card-container">
-                    <div class="card" style="width: 18rem;">
-                        <img src="images/The Little Library Foundation.png" class="card-img-top" alt="...">
+            <div id="work" class="container-fluid">
+                
+                <!-- Row 1-->
+                <div class="row m-5 card-container justify-content-center">
+
+                    <!-- Item 1 -->
+                    <div class="card" style="width: 25rem;">
+                        <a href="https://louiseclaughton.github.io/The-Little-Library-Foundation/" target="_blank"><div id="image-1" class="scroll image1 img-fluid portfolio-item" alt="..."></div></a>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">The Little Library Foundation</h5>
+                            <p class="card-text">A one-pager for a charity which gives books to children in the hospital.</p>
+                            <div class="row">
+                                <div class="col">
+                                    <button href="https://louiseclaughton.github.io/The-Little-Library-Foundation/" class="card-button-pink button-body">Demo</button>
+                                    <!-- <button href="#" class="card-button-blue button-body">About</button> -->
+                                </div>
+                                <div class="col">
+                                    <button href="https://github.com/LouiseClaughton/The-Little-Library-Foundation" class="card-button-blue button-body">GitHub</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="card" style="width: 18rem;">
-                        <img src="images/Short & Sweet.png" class="card-img-top" alt="...">
+                    <!-- Item 2 -->
+                    <div class="card" style="width: 25rem;">
+                        <a href="https://louiseclaughton.github.io/Short-and-Sweet/" target="_blank"><div id="image-2" class="scroll image2 img-fluid portfolio-item" alt="..."></div></a>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Short and Sweet</h5>
+                            <p class="card-text" style="margin-bottom: 55px;">A website for a confectionary company with a focus on fun and unique sweets.</p><!-- Margin bottom brings buttons in line with item 1-->
+                            <div class="row">
+                                <div class="col">
+                                    <button href="https://louiseclaughton.github.io/Short-and-Sweet/" class="card-button-pink button-body">Demo</button>
+                                    <!-- <button href="#" class="card-button-blue button-body">About</button> -->
+                                </div>
+                                <div class="col">
+                                    <button href="https://github.com/LouiseClaughton/Short-and-Sweet" class="card-button-blue button-body">GitHub</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card" style="width: 18rem;">
-                        <img src="images/MURAL.png" class="card-img-top" alt="...">
+                    <!-- Item 3 -->
+                    <div class="card" style="width: 25rem;">
+                        <a href="https://mural-art.webflow.io//" target="_blank"><div id="image-3" class="scroll image3 img-fluid portfolio-item" alt="..."></div></a>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">MURAL</h5>
+                            <p class="card-text" style="margin-bottom: 55px;">A landing page for a collective of artists and designers.</p><!-- Margin bottom brings buttons in line with item 1-->
+                            <button href="https://mural-art.webflow.io/" class="card-button-pink button-body">Demo</button>
                         </div>
                     </div>
 
-
-
-
-
-
-
-                  <!--Item 1-->
-                    <div class="col-12 mt-3 mt-lg-0 col-lg-6 col-xl-4 d-flex justify-content-center flex-wrap hidden text-center portfolio-inner"><!--1 column on LG screens and below, 2 columns on LG screens and above, 3 columns on XL and above-->
-                        <a href="https://louiseclaughton.github.io/Short-and-Sweet/" target="_blank"><div id="image-1" class="scroll image1 img-fluid portfolio-item"></div></a><!--Scroll allows scrolling animation on hover-->
-                            <div class="w-100"></div> <!--Spacing in between items so the text appears on a new line-->
-                        <h2 class="subheading portfolio-heading h2 mt-4">Short and Sweet</h2>
-                            <div class="w-100"></div>
-                        <p class="body">A landing page for a confectionary company with a focus on fun and unique sweets.</p>
-                            <div class="w-100"></div>
-                        <p class="body text-center" style="font-weight: bold; cursor: pointer;">BOOTSTRAP</p>
-                            <div class="w-100"></div>
-                        <a href="https://louiseclaughton.github.io/Short-and-Sweet/" target="_blank" class="link"><button class="button mb-3">Demo</button></a>
-                        <a href="https://github.com/LouiseClaughton/Short-and-Sweet" target="_blank" class="link"><button class="button mb-3">GitHub</button></a>
-                    </div>
-                  <!--Item 2-->
-                    <div class="col-12 mt-3 mt-lg-0 col-lg-6 col-xl-4 d-flex justify-content-center flex-wrap hidden text-center">
-                        <a href="https://louiseclaughton.github.io/The-Little-Library-Foundation/" target="_blank"><div id="image-2" class="scroll image2 img-fluid portfolio-item"></div></a><!--ID sets a height so that image fluid doesn't make it 0px high-->
-                            <div class="w-100"></div>
-                        <h2 class="subheading portfolio-heading h2 mt-4">The Little Library Foundation</h2>
-                            <div class="w-100"></div>
-                        <p class="body text-center">A landing page for a charity which provides books to children in the hospital.</p>
-                            <div class="w-100"></div>
-                        <p class="body text-center" style="font-weight: bold; cursor: pointer;"><span style="margin: 10px;">HTML</span><span style="margin: 10px;">CSS</span><span style="margin: 10px;">JAVASCRIPT</span></p>
-                            <div class="w-100"></div>
-                        <a href="https://louiseclaughton.github.io/The-Little-Library-Foundation/" target="_blank" class="link"><button class="button mb-3">Demo</button></a>
-                        <a href="https://github.com/LouiseClaughton/The-Little-Library-Foundation" target="_blank" class="link"><button class="button mb-3">GitHub</button></a>
-                    </div>
-                  <!--Item 3-->
-                    <div class="col-12 mt-3 mt-lg-0 col-lg-6 col-xl-4 d-flex justify-content-center flex-wrap hidden text-center mt-lg-5 mt-xl-0">
-                        <a href="https://mural-art.webflow.io/" target="_blank"><div id="image-3" class="scroll image3 img-fluid portfolio-item"></div></a>
-                            <div class="w-100"></div>
-                        <h2 class="subheading portfolio-heading h2 mt-4">MURAL</h2>
-                            <div class="w-100"></div>
-                        <p class="body text-center">A landing page for a collective of artists and designers.</p>
-                            <div class="w-100"></div>
-                        <p class="body text-center" style="font-weight: bold; cursor: pointer;">WEBFLOW</p>
-                            <div class="w-100"></div>
-                        <a href="https://mural-art.webflow.io/" target="_blank" class="link"><button class="button mb-3">Demo</button></a>
+                    <!-- Item 4 -->
+                    <div class="card" style="width: 25rem;">
+                        <a href="https://moonset-band.webflow.io/" target="_blank"><div id="image-4" class="scroll image4 img-fluid portfolio-item" alt="..."></div></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Moonset</h5>
+                            <p class="card-text" style="margin-bottom: 78px;">A one-page website for a metal rock band.</p><!-- Margin bottom brings buttons in line with item 1-->
+                            <button href="https://moonset-band.webflow.io/" class="card-button-pink button-body">Demo</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,10 +154,11 @@
             <div id="about" class="container-fluid text-center">
                 <div class="row">
                     <div class="about hidden col">
-                        <h2 class="heading-light display-1">About Me</h2>
-                        <p class="body about-body ms-5 me-5">I'm Louise Claughton, a web designer and developer with a focus on creative and visually inspiring websites. <br><br> 
-                        I graduated from Leeds Arts University with a Bachelor of Arts, and decided to combine my love of the visual medium with my love for technology and problem solving. <br><br>
-                        I took the Web Design and Development Bootcamp from the Coder's Guild to help build some hard skills, and enjoy learning new ways of doing things.
+                        <h2 class="about-heading">Louise Claughton</h2>
+                    </div>
+                    <div class="col">
+                        <p class="body about-body ms-5 me-5">Hello! I’m Louise Claughton, a web designer and developer based in Leeds, UK. 
+                            My design journey started with a degree in art; I now seek to combine my vast knowledge of design with the world of technology.
                         </p>
                     </div>
                 </div>

@@ -28,7 +28,7 @@ h1, h2, h3, .heading-body, .button {
     color: black;
     font-family: Watermelon;
     font-weight: bold;
-    font-size: 65px;
+    font-size: 75px;
 }
 
 .subheading {
@@ -143,6 +143,8 @@ body.dark-mode .navbar {
     border-bottom: solid black 5px;
     border-left: solid black 3px;
     border-right: solid black 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .heading-body {
@@ -161,11 +163,77 @@ body.dark-mode .heading-text {
     color: white;
 }
 
+/* Skills Section */
+
+#skills-slider {
+    background-color: #A1E1E4;
+}
+
+.skill-heading {
+    font-family: Watermelon;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+/* Skills Scroller */
+
+.scroll-container {
+    height: 15vh;
+}
+
+.carousel-primary,
+.carousel-secondary {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.carousel-primary {
+    position: absolute;
+    top: 25.2%;
+    left: 100%;
+    animation: scroll-horizontal 40s linear infinite;
+}
+
+.carousel-secondary {
+    position: absolute;
+    top: 25.2%;
+    left: -200%;
+    animation: scroll-horizontal-secondary 40s linear infinite; /* Using a different animation to give the animation a different start point */
+}
+
+@keyframes scroll-horizontal { /* Begins at left 0 and ends at left -200. Must be 200 gap to make it the same speed as scroll secondary */
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: -200%;
+    }
+}
+
+@keyframes scroll-horizontal-secondary { /* Begins at left 100 and ends at left -100 */
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
 /*** Portfolio (Light) ***/
 #work {
     background-color: #FFFCF4;
     padding-top: 80px;
     padding-bottom: 80px;
+}
+
+.card-container {
+    gap: 3rem;
 }
 
 .scroll {
@@ -185,17 +253,18 @@ body.dark-mode .heading-text {
 
 .portfolio-item {
     border: solid 2px black;
+    margin: 15px;
 }
 
 .image1 {
-    background: url(images/Short\ &\ Sweet.png);
+    background: url(images/The\ Little\ Library\ Foundation.png);
     height: 450px;
     background-size: cover;
     background-position: top;
 }
 
 .image2 {
-    background: url(images/The\ Little\ Library\ Foundation.png);
+    background: url(images/Short\ &\ Sweet.png);
     height: 450px;
     background-size: cover;
     background-position: top;
@@ -208,25 +277,86 @@ body.dark-mode .heading-text {
     background-position: top;
 }
 
+.image4 {
+    background: url(images/Moonset.png);
+    height: 450px;
+    background-size: cover;
+    background-position: top;
+}
+
 #image-1 {
-    height: 50vh;
+    height: 30vh;
 }
 
 #image-2 {
-    height: 50vh;
+    height: 30vh;
 }
 
 #image-3 {
-    height: 50vh;
+    height: 30vh;
 }
 
-.portfolio-heading {
-    margin: 20px;
+#image-4 {
+    height: 30vh;
+}
+
+.card-title {
+    font-family: Watermelon;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.card-text {
+    font-family: Sniglet;
 }
 
 .link {
     text-decoration: none;
     color: white;
+}
+
+/* Card Hover Settings */
+
+.card {
+    transition: 0.3s; /* Adding transition here instead of hover means the transition occurs on both hover in and hover out */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Expands card size on hover */
+}
+
+/* Card Buttons */
+
+.card-button-pink {
+    background-color: #F9E0ED;
+    border: 3px solid black;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.card-button-pink:hover {
+    background-color: #FFBCDF; /*Changes the background colour on hover for buttons */
+}
+
+.card-button-blue {
+    background-color: #A1E1E4;
+    border: 3px solid black;
+    text-decoration: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.card-button-blue:hover {
+    background-color: #59d3da;
+}
+
+.button-body {
+    color: black;
+    font-family: Sniglet;
+    font-size: 14px;
 }
 
 /*** Portfolio (Dark) ***/
@@ -252,6 +382,12 @@ body.dark-mode .link {
     background-color: #e8fbff;
     padding-top: 80px;
     padding-bottom: 80px;
+}
+
+.about-heading {
+    color: black;
+    font-family: Watermelon;
+    font-size: 55px;
 }
 
 /*** About (Dark) ***/
