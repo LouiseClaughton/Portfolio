@@ -29,7 +29,7 @@ h1, h2, h3, .heading-body, .button {
     font-family: Watermelon;
     font-weight: bold;
     font-size: 75px;
-    transform: scale(0.8);
+    animation: grow 2s;
 }
 
 .heading {
@@ -145,12 +145,11 @@ body.dark-mode .navbar {
     /* background-image: linear-gradient(to top, #e8fbff, #e9f9ff, #ebf7ff, #eff4ff, #f3f2ff, #f5f0ff, #f8eeff, #fcebff, #fde9ff, #fde6ff, #fee4ff, #ffe1ff); */
     background-color: #F9E0ED;
     padding-top: 250px;
-    height: 650px;
+    padding-bottom: 100px;
 }
 
 .heading-container {
     max-width: 700px;
-    max-height: 120px;
     background-color: white;
     border-top: solid black 3px;
     border-bottom: solid black 5px;
@@ -208,6 +207,7 @@ ul {
     white-space: nowrap;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .carousel-primary {
@@ -266,7 +266,7 @@ body.dark-mode .skill-heading {
 }
 
 .scroll {
-    width: 350px;
+    max-width: 350px;
     height: 450px;
     max-width: 100%;
     background-size: cover;
@@ -351,6 +351,11 @@ body.dark-mode .skill-heading {
     transition: 0.3s; /* Adding transition here instead of hover means the transition occurs on both hover in and hover out */
 }
 
+body.dark-mode .card {
+    background-color: black;
+    color: white;
+}
+
 .card:hover {
     transform: scale(1.05); /* Expands card size on hover */
 }
@@ -375,6 +380,10 @@ body.dark-mode .skill-heading {
     border: solid black 3px; /* Makes all borders 3px, gives illusion of button being 'pressed' */
 }
 
+body.dark-mode .card-button-pink {
+    background-color: #a76a9f;
+}
+
 .card-button-blue {
     background-color: #A1E1E4;
     border-top: solid black 3px;
@@ -392,6 +401,10 @@ body.dark-mode .skill-heading {
     border: solid black 3px; /* Makes all borders 3px, gives illusion of button being 'pressed' */
 }
 
+body.dark-mode .card-button-blue {
+    background-color: #ec97e1;
+}
+
 .button-body {
     color: black;
     font-family: Sniglet;
@@ -407,7 +420,7 @@ body.dark-mode #work {
 /**** About (Light) ****/
 #about {
     background-color: #beecee;
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 80px;
 }
 
@@ -417,10 +430,29 @@ body.dark-mode #work {
     font-size: 55px;
 }
 
+.about-container {
+    max-width: 900px;
+    background-color: white;
+    border-top: solid black 3px;
+    border-bottom: solid black 5px;
+    border-left: solid black 3px;
+    border-right: solid black 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-body {
+    margin-top: 20px;
+}
+
 /*** About (Dark) ***/
 
 body.dark-mode #about {
     background-color: #8f5a88;
+}
+
+body.dark-mode .about-body {
+    color: black;
 }
 
 /*** Footer ***/
@@ -429,6 +461,11 @@ body.dark-mode #about {
     background-color: #F9E0ED;
     color: black;
     font-family: Sniglet;
+}
+
+body.dark-mode #footer {
+    background-color: #4A3748;
+    color: white;
 }
 
 .footer-body {
@@ -463,6 +500,14 @@ body.dark-mode #about {
     transform: translateX(0);
 }
 
+@keyframes grow {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 /*** Transition Delays ***/
 
@@ -482,4 +527,10 @@ body.dark-mode #about {
 
 .text-container {
     transition-delay: 200ms;
+}
+
+@media (max-width: 1680px) {
+    .scroll-container {
+        display: none;
+    }
 }
