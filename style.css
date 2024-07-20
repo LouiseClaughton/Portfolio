@@ -29,6 +29,14 @@ h1, h2, h3, .heading-body, .button {
     font-family: Watermelon;
     font-weight: bold;
     font-size: 75px;
+    transform: scale(0.8);
+}
+
+.heading {
+    color: black;
+    font-family: Watermelon;
+    font-size: 50px;
+    margin: 20px;
 }
 
 .subheading {
@@ -50,22 +58,26 @@ h1, h2, h3, .heading-body, .button {
     font-family: Sniglet;
     padding: 0.5em 1em;
     border: solid black 3px;
+    border-bottom: solid black 5px;
+    border-left: solid black 3px;
+    border-right: solid black 5px;
     margin: 10px;
-    transition: 0.3s;
-}
-
-body.dark-mode .button {
-    background-color: white;
-    color: black;
+    transition: 0.15s;
 }
 
 .button:hover {
-    background-color: #FFBCDF; /*Changes the background colour on hover for buttons */
+    background-color: #59d3da; /*Changes the background colour on hover to dark blue */
     color: black;
+    border: solid black 3px; /* All borders are 3px on hover, illusion of 'pressing' button */
 }
 
-body.dark-mode .button:hover {
-    background-color: black;
+body.dark-mode .button { /* When in dark mode, white button with black text */
+    background-color: #a76a9f;
+    color: white;
+}
+
+body.dark-mode .button:hover { /* Changes to black button with white text on hover */
+    background-color: #8f5a88;
     color: white;
 }
 
@@ -76,6 +88,7 @@ a:hover {
 /*** Text Styles (Dark) ***/
 
 body.dark-mode .main-heading,
+body.dark-mode .heading,
 body.dark-mode .subheading,
 body.dark-mode .body {
     color: white;
@@ -132,7 +145,7 @@ body.dark-mode .navbar {
     /* background-image: linear-gradient(to top, #e8fbff, #e9f9ff, #ebf7ff, #eff4ff, #f3f2ff, #f5f0ff, #f8eeff, #fcebff, #fde9ff, #fde6ff, #fee4ff, #ffe1ff); */
     background-color: #F9E0ED;
     padding-top: 250px;
-    padding-bottom: 120px;
+    height: 650px;
 }
 
 .heading-container {
@@ -155,7 +168,8 @@ body.dark-mode .navbar {
 /*** Header (Dark) ***/
 
 body.dark-mode #header {
-    background-image: linear-gradient(to top, #72526f, #704e6d, #6d4b6a, #6b4768, #694465, #664262, #623f5e, #5f3d5b, #5a3c56, #543a51, #4f394d, #4a3748);
+    /* background-image: linear-gradient(to top, #72526f, #704e6d, #6d4b6a, #6b4768, #694465, #664262, #623f5e, #5f3d5b, #5a3c56, #543a51, #4f394d, #4a3748); */
+    background-color: #6b4467;
 }
 
 body.dark-mode .heading-text {
@@ -165,6 +179,10 @@ body.dark-mode .heading-text {
 
 /* Skills Section */
 
+ul {
+    list-style: none;
+}
+
 #skills-slider {
     background-color: #A1E1E4;
 }
@@ -172,13 +190,14 @@ body.dark-mode .heading-text {
 .skill-heading {
     font-family: Watermelon;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 25px;
 }
 
-/* Skills Scroller */
+/*** Skills Scroller ***/
 
 .scroll-container {
-    height: 15vh;
+    height: 10vh;
+    position: relative;
 }
 
 .carousel-primary,
@@ -193,16 +212,16 @@ body.dark-mode .heading-text {
 
 .carousel-primary {
     position: absolute;
-    top: 25.2%;
+    top: 25.5%;
     left: 100%;
-    animation: scroll-horizontal 40s linear infinite;
+    animation: scroll-horizontal 80s linear infinite;
 }
 
 .carousel-secondary {
     position: absolute;
-    top: 25.2%;
+    top: 25.5%;
     left: -200%;
-    animation: scroll-horizontal-secondary 40s linear infinite; /* Using a different animation to give the animation a different start point */
+    animation: scroll-horizontal-secondary 80s linear infinite; /* Using a different animation to give the animation a different start point */
 }
 
 @keyframes scroll-horizontal { /* Begins at left 0 and ends at left -200. Must be 200 gap to make it the same speed as scroll secondary */
@@ -223,6 +242,16 @@ body.dark-mode .heading-text {
     100% {
         left: -100%;
     }
+}
+
+/*** Skills Scroller (Dark) ***/
+
+body.dark-mode #skills-slider {
+    background-color: #8f5a88;
+}
+
+body.dark-mode .skill-heading {
+    color: white;
 }
 
 /*** Portfolio (Light) ***/
@@ -330,27 +359,37 @@ body.dark-mode .heading-text {
 
 .card-button-pink {
     background-color: #F9E0ED;
-    border: 3px solid black;
+    border-top: solid black 3px;
+    border-bottom: solid black 5px;
+    border-left: solid black 3px;
+    border-right: solid black 5px;
     text-decoration: none;
     padding: 10px;
     margin-bottom: 5px;
     width: 100%;
+    transition: 0.15s;
 }
 
 .card-button-pink:hover {
-    background-color: #FFBCDF; /*Changes the background colour on hover for buttons */
+    background-color: #FFBCDF; /*Changes the background colour on hover to dark pink */
+    border: solid black 3px; /* Makes all borders 3px, gives illusion of button being 'pressed' */
 }
 
 .card-button-blue {
     background-color: #A1E1E4;
-    border: 3px solid black;
+    border-top: solid black 3px;
+    border-bottom: solid black 5px;
+    border-left: solid black 3px;
+    border-right: solid black 5px;
     text-decoration: none;
     padding: 10px;
     width: 100%;
+    transition: 0.15s;
 }
 
 .card-button-blue:hover {
-    background-color: #59d3da;
+    background-color: #59d3da; /*Changes the background colour on hover to dark blue */
+    border: solid black 3px; /* Makes all borders 3px, gives illusion of button being 'pressed' */
 }
 
 .button-body {
@@ -365,21 +404,9 @@ body.dark-mode #work {
     background-color: #4A3748;
 }
 
-body.dark-mode #work-heading {
-    color: white;
-}
-
-body.dark-mode .button {
-    background-color: white;
-}
-
-body.dark-mode .link {
-    color: black;
-}
-
 /**** About (Light) ****/
 #about {
-    background-color: #e8fbff;
+    background-color: #beecee;
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -393,145 +420,15 @@ body.dark-mode .link {
 /*** About (Dark) ***/
 
 body.dark-mode #about {
-    background-color: #72526F;
-}
-
-/*** Skills (Light) ***/
-
-ul {
-    list-style: none;
-}
-
-.skills-list {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    overflow: hidden;
-}
-
-.skill {
-    color: black;
-    transition: 0.3s;
-    cursor: pointer;
-    text-align: center;
-    font-family: Questrial;
-}
-
-body.dark-mode .skill {
-    color: white;
-}
-
-.skill-caption {
-    margin-top: 10px;
-}
-
-#skills {
-    background-color: #FFFCF4;
-}
-
-body.dark-mode #skills {
-    background-color: #4A3748;
-}
-
-
-/* Dark Mode Logos */
-
-body.dark-mode .logo-1 { /* Changing the image for each logo to be the white version to stand out against the dark background */
-    content: url('images/logos/html\ \(white\).png');
-}
-
-body.dark-mode .logo-2 {
-    content: url('images/logos/css\ \(white\).png');
-}
-
-body.dark-mode .logo-3 {
-    content: url('images/logos/javascript\ \(white\).png');
-}
-
-body.dark-mode .logo-4 {
-    content: url('images/logos/github\ \(white\).png')
-}
-
-body.dark-mode .logo-5 {
-    content: url('images/logos/adobe\ \(white\).png')
-}
-
-body.dark-mode .logo-6 {
-    content: url('images/logos/bootstrap\ \(white\).png')
-}
-
-body.dark-mode .logo-7 {
-    content: url('images/logos/figma\ \(white\).png')
-}
-
-body.dark-mode .logo-8 {
-    content: url('images/logos/wordpress\ \(white\).png')
-}
-
-body.dark-mode .logo-9 {
-    content: url('images/logos/webflow\(white\).png')
-}
-
-/*** Contact (Light) ***/
-
-#contact {
-    background-color: #f5f0ff;
-    height: 800px;
-    padding-top: 80px;
-}
-
-input[type=text], 
-input[type=email] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 12px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    box-sizing: border-box;
-  }
-
-  input[type=textarea] {
-    width: 100%;
-    padding: 20px 20px;
-    margin: 20px 0 40px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    box-sizing: border-box;
-  }
-
-  button[type=submit] {
-    text-transform: uppercase;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    cursor: pointer;
-    margin: 0 auto;
-    display: block;
-  }
-
-  #form {
-    border-radius: 5px;
-    padding-left: 50px;
-    padding-right: 50px;
-    max-width: 850px;
-  }
-
-/*** Contact (Dark) ***/
-
-body.dark-mode #contact {
-    background-color: #72526F;
+    background-color: #8f5a88;
 }
 
 /*** Footer ***/
 #footer {
     height: 20vh;
-    background-color: white;
-}
-
-body.dark-mode #footer {
-    background-color: black;
+    background-color: #F9E0ED;
+    color: black;
+    font-family: Sniglet;
 }
 
 .footer-body {
@@ -557,6 +454,10 @@ body.dark-mode #footer {
     transform: translateX(-20%);
 }
 
+.grow {
+    transform: scale(1);
+}
+
 .show {
     opacity: 1;
     transform: translateX(0);
@@ -567,16 +468,12 @@ body.dark-mode #footer {
 
 /* Makes each heading line staggered */
 
-.heading:nth-child(2) { /* 'Louise' */
+.title:nth-child(2) { /* 'Louise' */
     transition-delay: 50ms;
 }
 
-.heading:nth-child(3) { /* 'Claughton' */
+.title:nth-child(3) { /* 'Claughton' */
     transition-delay: 100ms;
-}
-
-.heading:nth-child(4) { /* 'Web Designer & Developer */
-    transition-delay: 150ms;
 }
 
 /* Other Delays */
@@ -585,99 +482,4 @@ body.dark-mode #footer {
 
 .text-container {
     transition-delay: 200ms;
-}
-
-/*** The Little Library Foundation ***/
-#library-brief {
-    background-color: black;
-    color: white;
-    height: 70vh;
-}
-
-#library-heading {
-    font-family: 'Averia Serif Libre';
-}
-
-#library-wireframes,
-#library-fonts {
-    margin: 50px;
-}
-
-.font-image {
-    height: 300px;
-    width: auto;
-}
-
-.wireframe-image {
-    width: px;
-    height: auto;
-}
-
-/* 2xl */
-
-@media (min-width: 1440px) {
-    .flex-container {
-        max-width: none; /* The container fits the screen width */
-    }
-}
-
-/* xl */
-@media (min-width: 1280px) and (max-width: 1439px) {
-    .flex-container {
-        max-width: 1280px;
-    }
-}
-
-/* lg */
-@media (min-width: 1024px) and (max-width: 1279px) {
-    .flex-container {
-        max-width: 1024px;
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
-}
-
-/* md */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .flex-container {
-        max-width: 768px;
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
-}
-
-/*s*/
-@media (min-width: 640px) and (max-width: 767px) {
-    .flex-container {
-        max-width: 640px;
-    }
-}
-
-/*xs*/
-@media (min-width: 475px) and (max-width: 639px) {
-    .flex-container {
-        max-width: 475px; /* Container size shrinks with screen size, keeping the site responsive on all screen sizes */
-    }
-}
-
-/*2xs*/
-@media (min-width: 320px) and (max-width: 474px) {
-    .body {
-        overflow-x: hidden;
-    }
-
-    .flex-container {
-        max-width: 320px; /* Container size shrinks with screen size, keeping the site responsive on all screen sizes */
-        padding-left: 1rem;
-        padding-right: 1rem;
-        margin: 0 auto;
-    }
-
-}
-
-@media screen and (max-width: 600px) {
-    #mode-toggle {
-        margin-left: auto;
-        margin-right: 10px;
-    } /* On smaller screens, keep the toggle button on the left */
 }
