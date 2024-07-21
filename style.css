@@ -61,7 +61,8 @@ h1, h2, h3, .heading-body, .button {
     border-bottom: solid black 5px;
     border-left: solid black 3px;
     border-right: solid black 5px;
-    margin: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     transition: 0.15s;
 }
 
