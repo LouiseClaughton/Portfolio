@@ -261,6 +261,11 @@ body.dark-mode .skill-heading {
     padding-bottom: 80px;
 }
 
+.portfolio-item {
+    border: solid 2px black;
+    margin: 15px;
+}
+
 .card-container {
     gap: 3rem;
 }
@@ -271,18 +276,13 @@ body.dark-mode .skill-heading {
     max-width: 100%;
     background-size: cover;
     background-position: top;
-    transition: 4s;
+    transition: 6s;
     display: flex;
     flex-direction: row;
 }
 
 .scroll:hover {
     background-position: bottom;
-}
-
-.portfolio-item {
-    border: solid 2px black;
-    margin: 15px;
 }
 
 .image1 {
@@ -313,19 +313,18 @@ body.dark-mode .skill-heading {
     background-position: top;
 }
 
-#image-1 {
-    height: 30vh;
+.image5 {
+    background: url(images/Beyond\ Reality.png);
+    height: 450px;
+    background-size: cover;
+    background-position: top;
 }
 
-#image-2 {
-    height: 30vh;
-}
-
-#image-3 {
-    height: 30vh;
-}
-
-#image-4 {
+#image-1,
+#image-2,
+#image-3,
+#image-4,
+#image-5 {
     height: 30vh;
 }
 
