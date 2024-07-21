@@ -6,8 +6,7 @@
     <title>Louise Claughton</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet"><!--Sofia Sans Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet"><!--Quicksand Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"><!--Questrial Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet"><!--Sniglet Font-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="app.js" defer></script>
   </head>
@@ -28,9 +27,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="#about" style="font-size: 18px;">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact" style="font-size: 18px;">Contact</a>
-              </li>
             </ul>
           </div>
           <a id="mode-toggle" class="navbar-brand"></a>
@@ -41,186 +37,152 @@
     <main>
         <!--Header-->
         <section>
-          <div id="header" class="container-fluid text-center">
-            <div class="row">
-              <div class="col">
-                <h2 id="subheading-sub" class="subheading heading part-left-slide hidden display-6 ms-5 me-5">Hi, I'm</h2>
-                <h2 class="main-heading heading part-left-slide hidden display-1 ms-5 me-5">Louise</h2>
-                <h1 class="main-heading heading part-left-slide hidden display-1 ms-5 me-5">Claughton</h1>
-                <h2 id="subheading-main" class="subheading heading part-left-slide hidden display-6 ms-5 me-5">Web Designer and Developer</h2>
-              </div>
-            </div>
-          </div>
+            <div id="header" class="container-fluid text-center justify-content-center">
+                <div class="row">
+                    <div class="col heading-title-container">
+                        <h2 class="subheading title hidden ms-md-0 me-md-0 ms-5 me-5 ">Hi, I'm</h2>
+                        <h2 class="main-heading title hidden ms-md-0 me-md-0 ms-5 me-5 display-1">Louise Claughton</h1>
+                        <div class="heading-container ms-md-auto me-md-auto ms-5 me-5 ">
+                            <p class="heading-body">A web designer & developer specialising in crafting creative and interactive websites which
+                            are optimized for performance and user experience.</p>
+                        </div>
+                        <a href="#work"><button class="button">Projects</button></a>
+                      
+        <!-- Skills -->
+        <section id="skills-slider">
+            <div class="scroll-container">
+                    <ul class="carousel-primary skill-heading">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>GitHub</li>
+                        <li>Adobe</li>
+                        <li>Bootstrap</li>
+                        <li>Responsive Design</li>
+                        <li>Figma & Design Skills</li>
+                        <li>Wordpress & Webflow</li>
+                        <li>Animations & Interactions</li>
+                    </ul>
+                    <ul class="carousel-secondary skill-heading">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>GitHub</li>
+                        <li>Adobe</li>
+                        <li>Bootstrap</li>
+                        <li>Responsive Design</li>
+                        <li>Figma & Design Skills</li>
+                        <li>Wordpress & Webflow</li>
+                        <li>Animations & Interactions</li>
+                    </ul>
+            </div>   
         </section>
 
         <!--Featured Work-->
         <section>
             <div id="work" class="container-fluid">
-                <div id="work-heading" class="row">
-                    <h2 class="heading-light display-1">Featured Work</h2>
-                </div>
+                
+                <!-- Row 1-->
+                <div class="row m-5 card-container justify-content-center">
 
-                <!--Row 1-->
-                <div class="row m-5">
-                  <!--Item 1-->
-                    <div class="col-12 mt-3 mt-lg-0 col-lg-6 col-xl-4 d-flex justify-content-center flex-wrap hidden text-center portfolio-inner"><!--1 column on LG screens and below, 2 columns on LG screens and above, 3 columns on XL and above-->
-                        <a href="https://louiseclaughton.github.io/Short-and-Sweet/" target="_blank"><div id="image-1" class="scroll image1 img-fluid portfolio-item"></div></a><!--Scroll allows scrolling animation on hover-->
-                            <div class="w-100"></div> <!--Spacing in between items so the text appears on a new line-->
-                        <h2 class="subheading portfolio-heading h2 mt-4">Short and Sweet</h2>
-                            <div class="w-100"></div>
-                        <p class="body">A landing page for a confectionary company with a focus on fun and unique sweets.</p>
-                            <div class="w-100"></div>
-                        <p class="body text-center" style="font-weight: bold; cursor: pointer;">BOOTSTRAP</p>
-                            <div class="w-100"></div>
-                        <a href="https://louiseclaughton.github.io/Short-and-Sweet/" target="_blank" class="link"><button class="button mb-3">Demo</button></a>
-                        <a href="https://github.com/LouiseClaughton/Short-and-Sweet" target="_blank" class="link"><button class="button mb-3">GitHub</button></a>
+                    <!-- Item 1 -->
+                    <div class="card" style="width: 28rem;">
+                        <a href="https://louiseclaughton.github.io/The-Little-Library-Foundation/" target="_blank"><div id="image-1" class="scroll image1 img-fluid portfolio-item" alt="The Little Library Foundation Website"></div></a>
+                        <div class="card-body">
+                            <h5 class="card-title display-6">The Little Library Foundation</h5>
+                            <h6 class="body">HTML CSS JAVASCRIPT</h6>
+                            <p class="card-text">A one-pager for a charity which gives books to children in the hospital.</p>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="https://louiseclaughton.github.io/The-Little-Library-Foundation/" target="_blank"><button class="card-button-pink button-body">Demo</button></a>
+                                    <!-- <button href="#" class="card-button-blue button-body">About</button> -->
+                                </div>
+                                <div class="col">
+                                    <a href="https://github.com/LouiseClaughton/The-Little-Library-Foundation" target="_blank"><button class="card-button-blue button-body">GitHub</button></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  <!--Item 2-->
-                    <div class="col-12 mt-3 mt-lg-0 col-lg-6 col-xl-4 d-flex justify-content-center flex-wrap hidden text-center">
-                        <a href="https://louiseclaughton.github.io/The-Little-Library-Foundation/" target="_blank"><div id="image-2" class="scroll image2 img-fluid portfolio-item"></div></a><!--ID sets a height so that image fluid doesn't make it 0px high-->
-                            <div class="w-100"></div>
-                        <h2 class="subheading portfolio-heading h2 mt-4">The Little Library Foundation</h2>
-                            <div class="w-100"></div>
-                        <p class="body text-center">A landing page for a charity which provides books to children in the hospital.</p>
-                            <div class="w-100"></div>
-                        <p class="body text-center" style="font-weight: bold; cursor: pointer;"><span style="margin: 10px;">HTML</span><span style="margin: 10px;">CSS</span><span style="margin: 10px;">JAVASCRIPT</span></p>
-                            <div class="w-100"></div>
-                        <a href="https://louiseclaughton.github.io/The-Little-Library-Foundation/" target="_blank" class="link"><button class="button mb-3">Demo</button></a>
-                        <a href="https://github.com/LouiseClaughton/The-Little-Library-Foundation" target="_blank" class="link"><button class="button mb-3">GitHub</button></a>
+                    
+                    <!-- Item 2 -->
+                    <div class="card" style="width: 28rem;">
+                        <a href="https://louiseclaughton.github.io/Short-and-Sweet/" target="_blank"><div id="image-2" class="scroll image2 img-fluid portfolio-item" alt="Short and Sweet Website"></div></a>
+                        <div class="card-body">
+                            <h5 class="card-title display-6">Short and Sweet</h5>
+                            <h6 class="body">BOOTSTRAP</h6>
+                            <p class="card-text" style="margin-bottom: 65px;">A website for a confectionary company with a focus on fun and unique sweets.</p><!-- Margin bottom brings buttons in line with item 1-->
+                            <div class="row">
+                                <div class="col">
+                                    <a href="https://louiseclaughton.github.io/Short-and-Sweet/" target="_blank"><button class="card-button-pink button-body">Demo</button></a>
+                                    <!-- <button href="#" class="card-button-blue button-body">About</button> -->
+                                </div>
+                                <div class="col">
+                                    <a href="https://github.com/LouiseClaughton/Short-and-Sweet" target="_blank"><button class="card-button-blue button-body">GitHub</button></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  <!--Item 3-->
-                    <div class="col-12 mt-3 mt-lg-0 col-lg-6 col-xl-4 d-flex justify-content-center flex-wrap hidden text-center mt-lg-5 mt-xl-0">
-                        <a href="https://mural-art.webflow.io/" target="_blank"><div id="image-3" class="scroll image3 img-fluid portfolio-item"></div></a>
-                            <div class="w-100"></div>
-                        <h2 class="subheading portfolio-heading h2 mt-4">MURAL</h2>
-                            <div class="w-100"></div>
-                        <p class="body text-center">A landing page for a collective of artists and designers.</p>
-                            <div class="w-100"></div>
-                        <p class="body text-center" style="font-weight: bold; cursor: pointer;">WEBFLOW</p>
-                            <div class="w-100"></div>
-                        <a href="https://mural-art.webflow.io/" target="_blank" class="link"><button class="button mb-3">Demo</button></a>
-                    </div>
-                </div>
 
-                <!--Row 2-->
-                <div class="row m-5">
-                    <!--Item 1-->
-                      <div class="col-12 mt-3 mt-lg-0 col-lg-6 col-xl-4 d-flex justify-content-center flex-wrap hidden text-center portfolio-inner"><!--1 column on LG screens and below, 2 columns on LG screens and above, 3 columns on XL and above-->
-                          <a href="https://moonset-band.webflow.io/" target="_blank"><div id="image-4" class="scroll image4 img-fluid portfolio-item"></div></a><!--Scroll allows scrolling animation on hover-->
-                              <div class="w-100"></div> <!--Spacing in between items so the text appears on a new line-->
-                          <h2 class="subheading portfolio-heading h2 mt-4">Moonset</h2>
-                              <div class="w-100"></div>
-                          <p class="body">A landing page for a rock band.</p>
-                              <div class="w-100"></div>
-                          <p class="body text-center" style="font-weight: bold; cursor: pointer;">WEBFLOW</p>
-                              <div class="w-100"></div>
-                          <a href="https://moonset-band.webflow.io/" target="_blank" class="link"><button class="button mb-3">Demo</button></a>
-                      </div>
-                </div>
-                <div class="row text-center">
-                    <p class="body">*Please note, these websites were created as practice projects only. Any connection to existing people, places or businesses is entirely coincidental.</p>
+                    <!-- Item 3 -->
+                    <div class="card" style="width: 28rem;">
+                        <a href="https://mural-art.webflow.io//" target="_blank"><div id="image-3" class="scroll image3 img-fluid portfolio-item" alt="MURAL Website"></div></a>
+                        <div class="card-body">
+                            <h5 class="card-title display-6">MURAL</h5>
+                            <h6 class="body">WEBFLOW</h6>
+                            <p class="card-text" style="margin-bottom: 88px;">A landing page for a collective of artists and designers.</p><!-- Margin bottom brings buttons in line with item 1-->
+                            <a href="https://mural-art.webflow.io/" target="_blank"><button class="card-button-pink button-body">Demo</button></a>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="card" style="width: 28rem;">
+                        <a href="https://moonset-band.webflow.io/" target="_blank"><div id="image-4" class="scroll image4 img-fluid portfolio-item" alt="Moonset Website"></div></a>
+                        <div class="card-body">
+                            <h5 class="card-title display-6">Moonset</h5>
+                            <h6 class="body">WEBFLOW</h6>
+                            <p class="card-text" style="margin-bottom: 85px;">A one-page website for a metal rock band.</p><!-- Margin bottom brings buttons in line with item 1-->
+                            <a href="https://moonset-band.webflow.io/" target="_blank"><button class="card-button-pink button-body">Demo</button></a>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="card" style="width: 28rem;">
+                        <a href="https://wp.louiseclaughton.com/" target="_blank"><div id="image-5" class="scroll image5 img-fluid portfolio-item" alt="Beyond Reality Website"></div></a>
+                        <div class="card-body">
+                            <h5 class="card-title display-6">Beyond Reality</h5>
+                            <h6 class="body">WORDPRESS</h6>
+                            <p class="card-text" style="margin-bottom: 60px;">A one-page website for a virtual reality experience company.</p><!-- Margin bottom brings buttons in line with item 1-->
+                            <a href="https://wp.louiseclaughton.com/" target="_blank"><button class="card-button-pink button-body">Demo</button></a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
         <!--About-->
         <section>
-            <div id="about" class="container-fluid text-center">
+            <div id="about" class="container-fluid">
                 <div class="row">
-                    <div class="about hidden col">
-                        <h2 class="heading-light display-1">About Me</h2>
-                        <p class="body about-body ms-5 me-5">I'm Louise Claughton, a web designer and developer with a focus on creative and visually inspiring websites. <br><br> 
-                        I graduated from Leeds Arts University with a Bachelor of Arts, and decided to combine my love of the visual medium with my love for technology and problem solving. <br><br>
-                        I took the Web Design and Development Bootcamp from the Coder's Guild to help build some hard skills, and enjoy learning new ways of doing things.
-                        </p>
+                    <div class="col text-center">
+                        <h2 class="heading display-2">About Me</h2>
+                        <div class="about-container ms-md-auto me-md-auto ms-5 me-5">
+                            <p class="body about-body ms-md-0 me-md-0 ms-5 me-5 ps-md-5 pe-md-5">Hello! I’m Louise Claughton, a web designer and developer based in Leeds, UK, with a focus on creative and visually inspiring websites.
+                                My design journey started with a degree in art; I now seek to combine my vast knowledge of design with my love of technology. I enjoy learning new ways of doing things and 
+                                exploring new opportunities.
+                            </p>
+                            <p class="body about-body ms-md-0 me-md-0 ms-1 me-1 mb-5">Email: louiseeclaughton@gmail.com</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section> 
 
-        <!--Skills-->
-        <section>
-            <div id="skills" class="skills-list container-fluid text-center">
-                <div class="row flex-xl-nowrap justify-content-center"><!--On XL screens, content does not wrap. This prevents one logo from being below the others if it will not fit and the columns become 3 wide as on smaller screens-->
-                    
-                    <!--Skill 1 (HTML)-->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl skill"> <!--On XS screens (<576px) columns are stacked vertically. Between SM (576px) and XL (1200px) screens, there are 3 columns. On XL screens, columns are stacked horizontally-->
-                        <img src="images/logos/html (black).png" class="logo logo-1 m-sm-2"><!--Small margins around each logo to keep them from crashing into each other-->
-                        <h6 class="skill-caption">HTML</h6>
-                    </div>
-
-                    <!--Skill 2 (CSS)-->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl skill">
-                        <img src="images/logos/css (black).png" class="logo logo-2 m-sm-2">
-                        <h6 class="skill-caption">CSS</h6>
-                    </div>
-
-                    <!--Skill 3 (Javascript)-->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl skill">
-                        <img src="images/logos/javascript (black).png" class="logo logo-3 m-sm-2">
-                        <h6 class="skill-caption">Javascript</h6>
-                    </div>
-
-                    <!--Skill 4 (Github)-->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl skill">
-                        <img src="images/logos/github (black).png" class="logo logo-4 m-sm-2">
-                        <h6 class="skill-caption">GitHub</h6>
-                    </div>
-
-                    <!--Skill 5 (Adobe)-->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl skill">
-                        <img src="images/logos/adobe (black).png" class="logo logo-5 m-sm-2">
-                        <h6 class="skill-caption">Adobe</h6>
-                    </div>
-
-                    <!--Skill 6 (Bootstrap)-->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl skill">
-                        <img src="images/logos/bootstrap (black).png" class="logo logo-6 m-sm-2">
-                        <h6 class="skill-caption">Bootstrap</h6>
-                    </div>
-
-                    <!--Skill 7 (Figma)-->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl skill">
-                        <img src="images/logos/figma (black).png" class="logo logo-7 m-sm-2">
-                        <h6 class="skill-caption">Figma</h6>
-                    </div>
-
-                    <!--Skill 8 (Wordpress)-->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl skill">
-                        <img src="images/logos/wordpress (black).png" class="logo logo-8 m-sm-2">
-                        <h6 class="skill-caption">Wordpress</h6>
-                    </div>
-
-                    <!--Skill 9 (Webflow)-->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl skill">
-                        <img src="images/logos/webflow(black).png" class="logo logo-9 m-sm-2">
-                        <h6 class="skill-caption">Webflow</h6>
-                    </div>
-            
-                </div>
-            </div>
-        </section>
-        
-
-        <!--Contact-->
-        <section id="contact" class="container-fluid">
-            <div class="row text-center justify-content-center">
-                <h2 class="heading-light contact hidden display-1">Contact</h2>
-                <p class="contact body ps-5 pe-5">Email me at <strong>louiseeclaughton@gmail.com</strong>.
-                    <!-- <form method="GET" action="mailto:louiseeclaughton@gmail.com" id="form" class="m-5">
-                        <input type="text" placeholder="Name" required>
-                        <input type="email" placeholder="Email Address" required>
-                        <input type="textarea" placeholder="Message" required>
-                        <button type="submit" class="button">Submit</button>
-                    </form> -->
-            </div>
-        </section>
-
     </main>
 
     <!--Footer-->
     <footer id="footer">
-      <p class="body footer-body" style="text-align: center;">&copy Louise Claughton 2024</p>
+      <p class="footer-body" style="text-align: center;">&copy Louise Claughton 2024</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
