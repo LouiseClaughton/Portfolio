@@ -26,7 +26,7 @@ h1, h2, h3, .heading-body, .button {
 
 .main-heading {
     color: black;
-    font-family: Watermelon;
+    font-family: Montserrat;
     font-weight: bold;
     font-size: 75px;
     animation: grow 2s;
@@ -34,7 +34,7 @@ h1, h2, h3, .heading-body, .button {
 
 .heading {
     color: black;
-    font-family: Watermelon;
+    font-family: Montserrat;
     font-size: 50px;
     margin: 20px;
 }
@@ -145,7 +145,7 @@ body.dark-mode .navbar {
 #header {
     /* background-image: linear-gradient(to top, #e8fbff, #e9f9ff, #ebf7ff, #eff4ff, #f3f2ff, #f5f0ff, #f8eeff, #fcebff, #fde9ff, #fde6ff, #fee4ff, #ffe1ff); */
     background-color: #F9E0ED;
-    padding-top: 250px;
+    padding-top: 170px;
     padding-bottom: 100px;
 }
 
@@ -188,15 +188,16 @@ ul {
 }
 
 .skill-heading {
-    font-family: Watermelon;
+    font-family: Montserrat;
+    font-weight: bold;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 16px;
 }
 
 /*** Skills Scroller ***/
 
 .scroll-container {
-    height: 10vh;
+    height: 100px;
     position: relative;
 }
 
@@ -213,14 +214,14 @@ ul {
 
 .carousel-primary {
     position: absolute;
-    top: 25.5%;
+    top: 35%;
     left: 100%;
     animation: scroll-horizontal 80s linear infinite;
 }
 
 .carousel-secondary {
     position: absolute;
-    top: 25.5%;
+    top: 35%;
     left: -200%;
     animation: scroll-horizontal-secondary 80s linear infinite; /* Using a different animation to give the animation a different start point */
 }
@@ -330,7 +331,8 @@ body.dark-mode .skill-heading {
 }
 
 .card-title {
-    font-family: Watermelon;
+    font-family: Montserrat;
+    font-weight: bold;
     font-size: 30px;
     text-transform: uppercase;
     margin: 10px 0;
@@ -529,7 +531,7 @@ body.dark-mode #footer {
     transition-delay: 200ms;
 }
 
-@media (max-width: 1680px) {
+@media (max-width: 1440px) {
     .scroll-container {
         display: none;
     }
